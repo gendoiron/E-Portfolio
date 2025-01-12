@@ -1,26 +1,18 @@
 ---
-title: "My E-Portfolio"
-image: images/MGEM_logo.png
+title: "Geneviève Doiron"
+image: "C:/Users/ggdoiron.stu/Downloads/waterfall.JPG"
 about:
   template: trestles
   image-width: 20em
   links: 
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/ramon-melser-666932129/
-    - icon: twitter
-      text: Twitter/X
-      href: https://x.com/MelserRamon
-    - icon: github
-      text: GitHub
-      href: https://github.com/ramonmelser
     - icon: envelope-at
       text: Email
-      href: mailto:melser@student.ubc.ca
+      href: mailto:gendoironn@gmail.com
 ---
 
-Hey there people,
+ 
+Creative, adaptable, and organized. I am a passionate geomatician, interested in equitable climate adaptation, urban planning, and conservation. I have experience in the environment and equity sectors with competencies in research, mapping, field work, and outreach. 
 
-This is your E-Portfolio landing page. Be sure to upload a professional headshot of yourself, and provide the appropriate links to your professional social media (linkedin, X/Twitter, etc). This is also a good place to provide a short summary of your education, career and interests. If you are associated with a lab or working with a research supervisor, it may be appropriate to provide some information on that here, along with links to relevant websites.
+I am currently pursuing a Masters in Geomatics for Environmental Management at the University of British Columbia.
 
-Write something about myself, very exciting.
+This website is living repository showcasing my works, both personal and professional, that I am proud of. 
