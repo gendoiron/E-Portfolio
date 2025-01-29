@@ -2,23 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "My E-Portfolio",
+    "title": "Geneviève Doiron",
     "section": "",
-    "text": "Hey there,\nThis is your E-Portfolio landing page. Be sure to upload a professional headshot of yourself, and provide the appropriate links to your professional social media (linkedin, X/Twitter, etc). This is also a good place to provide a short summary of your education, career and interests. If you are associated with a lab or working with a research supervisor, it may be appropriate to provide some information on that here, along with links to relevant websites.\nWrite something about myself, very exciting."
+    "text": "About Me\nCreative, adaptable, and organized. I am a passionate geomatician, interested in equitable climate change adaptation, urban planning, and conservation. I have experience in the environment and equity sectors with competencies in research, mapping, field work, and outreach.\nI am currently pursuing a Masters in Geomatics for Environmental Management at the University of British Columbia.\nThis website is living repository showcasing the works, both personal and professional, that I am proud of."
   },
   {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "Education\n\nList your education here.\n\n\n\nPublications\nPeer-reviewed publications:\n\nList any peer-reviewed publications here.\n\nReports:\n\nList any non-peer reviewed materials you’d like to share here.\n\n\n\nConferences & Talks\nInvited Talks\n\nIf you’ve been invited to speak in a professional setting, list that here.\n\nConference Presentations\n\nIf the presentation was at a conference, list them here.\n\n\n\nAwards & Honors\n\nList any scholarships, bursaries, etc.\n\n\n\nTeaching Assistantships\n\nList any TA positions you may have held.\n\n\n\nInstitutional Service\n\nVolunteering etc."
+    "text": "University of British Columbia\nMasters in Geomatics for Environmental Management\nMcGill University\nBachelor of Arts, Environment\nDomain: Ecological Determinants of Health in Society, Minors: Field Studies & Indigenous Studies\n\n\n\nCanadian Museum of Nature, Ottawa, Canada\nSeptember – December 2024 Research and Collections Assistant – Invertebrate Zoology - Completes data entry and digitization of sections of the museum’s collection in order to make Canadian ecological data accessible for biodiversity research, - Assisted the molecular lab with specimen DNA barcoding including DNA extractions, gene isolation, and PCR tests.\nEnvironment and Climate Change Canada, Remote\nAugust 2022 – September 2024 Youth Council Member - Represented Canadian youth on national and international stages; (e.g. UN Biodiversity Conference COP 15) - Advised on Canada’s Net Zero by 2050 strategy, the 2030 Emissions Reduction Plan, the National Adaptation Strategy, and the 2030 Biodiversity Strategy, National Strategy on Environmental Justice, among others.\nCoastal Action Foundation, Lunenburg, Canada April – August 2022 Junior Field Technician – Education Team - Designed and led educational programming on a variety of environmental topics, - Assisted in various field work activities including population surveys and habitat restoration.\nCanadian Students for Sensible Drug Policy McGill, Montreal, Canada\nSeptember 2021 – April 2022 Logistics Coordinator - Successfully co-launched a city wide harm reduction program and led logistics on production, scheduling, and delivery of harm reduction kits leading to the successful production and delivery of hundreds of harm reduction kits in the first month of operation.\nPembina Institute, Remote\nMay – August 2021 Research and Engagement Intern – Clean Energy Program - Led a research project that culminated in a published report outlining five key barriers facing women in Canada’s conventional and emerging energy sectors, (See publications section)\nEcotrust Canada, Remote\nMay – September 2020 Research Intern – Energy Policy - Authored a published research report offering recommendations for improved policies and programs aimed at energy poverty alleviation in rural, remote, and Indigenous communities in British Columbia, Canada, (See publications section)\n\n\n\nMcGill University Africa Field Study Semester, Kenya and Tanzania\nJanuary – March 2023 Student Researcher - Co-designed and conducted a research project mapping human-wildlife conflict in two Kenyan communities, - Co-led a three-month study investigating individual-scale adaptations to climate change in rural communities across Kenya and Tanzania, - Participated in field courses focused on environmental challenges in East Africa and field research techniques.\nLyman Entomological Museum, McGill University, Montreal, Canada\nSeptember – December 2022 Student Researcher\nMcGill University & Peter-McGill Community Council, Montreal, Canada\nSeptember – December 2022 Student Researcher and GIS Analyst - Conducted a spatial analysis to determine the ideal location for a new park in the Peter-McGill District of Montreal based on client priorities informed by demographic, geographic, and temperature data.\n\n\n\nPeer-reviewed publications:\nUnder Review: C. Dominici-Tiranti, M.D. Jackson, G. Doiron, & J.P. Gillung. New record of Schendyla nemorensis (Chilopoda: Geophilomorpha) for Quebec.\nReports:\nDoiron, Genevieve, Emma Severson-Baker, and Laura Hughes. Women in Alberta’s Energy Transition: A review of barriers to participation and leadership. The Pembina Institute, 2021. https://www.pembina.org/pub/women-albertas-energy-transition\nDoiron, Genevieve, and Heerema, Dylan. Rethinking Energy Bill Protections in British Columbia. Rep. Ecotrust Canada, Aug. 2020. https://ecotrust.ca/latest/research/rethinking-energy-bill-protections-in-british columbia-2020/\n\n\n\nRedbank’s Family Loran Scholar (2019)\nLieutenant Governor’s Medal for Education (2018)\nNova Scotia Youth Volunteer of the Year Award (2018)\n\n\n\nEnglish (Fluent)\nFrench (Fluent)\nSwahili (Intermediate)"
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
-    "title": "Publications",
+    "title": "Photography",
     "section": "",
-    "text": "Peer-reviewed publications:\nDespite listing them on your resume, it may also be pertinent to create a seperate tab for publications and reports. As your career progresses, this list may become quite long, so be sure to organize things. You may want to point to ‘most recent’ publications, or categorize things by project/topic."
+    "text": "“Datif the Dancer”, Zanzibar, 2024\n\n\n\n\n\n“Chef After the Show”, Kisumu, 2023\n\n\n\n\n\n“Betty”, Kisumu, 2023"
   },
   {
     "objectID": "content_development.html",
@@ -54,5 +54,89 @@
     "title": "Content & Deliverables",
     "section": "",
     "text": "You can also provide a frame linking to external websites. For example, here is a link to a Google Earth Engine application I developed. The full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "",
+    "text": "University of British Columbia\nMasters in Geomatics for Environmental Management\nMcGill University\nBachelor of Arts, Environment\nDomain: Ecological Determinants of Health in Society, Minors: Field Studies & Indigenous Studies"
+  },
+  {
+    "objectID": "resume.html#work-experience",
+    "href": "resume.html#work-experience",
+    "title": "Resume",
+    "section": "",
+    "text": "Canadian Museum of Nature, Ottawa, Canada\nSeptember – December 2024 Research and Collections Assistant – Invertebrate Zoology - Completes data entry and digitization of sections of the museum’s collection in order to make Canadian ecological data accessible for biodiversity research, - Assisted the molecular lab with specimen DNA barcoding including DNA extractions, gene isolation, and PCR tests.\nEnvironment and Climate Change Canada, Remote\nAugust 2022 – September 2024 Youth Council Member - Represented Canadian youth on national and international stages; (e.g. UN Biodiversity Conference COP 15) - Advised on Canada’s Net Zero by 2050 strategy, the 2030 Emissions Reduction Plan, the National Adaptation Strategy, and the 2030 Biodiversity Strategy, National Strategy on Environmental Justice, among others.\nCoastal Action Foundation, Lunenburg, Canada April – August 2022 Junior Field Technician – Education Team - Designed and led educational programming on a variety of environmental topics, - Assisted in various field work activities including population surveys and habitat restoration.\nCanadian Students for Sensible Drug Policy McGill, Montreal, Canada\nSeptember 2021 – April 2022 Logistics Coordinator - Successfully co-launched a city wide harm reduction program and led logistics on production, scheduling, and delivery of harm reduction kits leading to the successful production and delivery of hundreds of harm reduction kits in the first month of operation.\nPembina Institute, Remote\nMay – August 2021 Research and Engagement Intern – Clean Energy Program - Led a research project that culminated in a published report outlining five key barriers facing women in Canada’s conventional and emerging energy sectors, (See publications section)\nEcotrust Canada, Remote\nMay – September 2020 Research Intern – Energy Policy - Authored a published research report offering recommendations for improved policies and programs aimed at energy poverty alleviation in rural, remote, and Indigenous communities in British Columbia, Canada, (See publications section)"
+  },
+  {
+    "objectID": "resume.html#student-research-experience",
+    "href": "resume.html#student-research-experience",
+    "title": "Resume",
+    "section": "",
+    "text": "McGill University Africa Field Study Semester, Kenya and Tanzania\nJanuary – March 2023 Student Researcher - Co-designed and conducted a research project mapping human-wildlife conflict in two Kenyan communities, - Co-led a three-month study investigating individual-scale adaptations to climate change in rural communities across Kenya and Tanzania, - Participated in field courses focused on environmental challenges in East Africa and field research techniques.\nLyman Entomological Museum, McGill University, Montreal, Canada\nSeptember – December 2022 Student Researcher\nMcGill University & Peter-McGill Community Council, Montreal, Canada\nSeptember – December 2022 Student Researcher and GIS Analyst - Conducted a spatial analysis to determine the ideal location for a new park in the Peter-McGill District of Montreal based on client priorities informed by demographic, geographic, and temperature data."
+  },
+  {
+    "objectID": "resume.html#publications",
+    "href": "resume.html#publications",
+    "title": "Resume",
+    "section": "",
+    "text": "Peer-reviewed publications:\nUnder Review: C. Dominici-Tiranti, M.D. Jackson, G. Doiron, & J.P. Gillung. New record of Schendyla nemorensis (Chilopoda: Geophilomorpha) for Quebec.\nReports:\nDoiron, Genevieve, Emma Severson-Baker, and Laura Hughes. Women in Alberta’s Energy Transition: A review of barriers to participation and leadership. The Pembina Institute, 2021. https://www.pembina.org/pub/women-albertas-energy-transition\nDoiron, Genevieve, and Heerema, Dylan. Rethinking Energy Bill Protections in British Columbia. Rep. Ecotrust Canada, Aug. 2020. https://ecotrust.ca/latest/research/rethinking-energy-bill-protections-in-british columbia-2020/"
+  },
+  {
+    "objectID": "resume.html#awards",
+    "href": "resume.html#awards",
+    "title": "Resume",
+    "section": "",
+    "text": "Redbank’s Family Loran Scholar (2019)\nLieutenant Governor’s Medal for Education (2018)\nNova Scotia Youth Volunteer of the Year Award (2018)"
+  },
+  {
+    "objectID": "resume.html#student-research",
+    "href": "resume.html#student-research",
+    "title": "Resume",
+    "section": "",
+    "text": "McGill University Africa Field Study Semester, Kenya and Tanzania\nJanuary – March 2023 Student Researcher - Co-designed and conducted a research project mapping human-wildlife conflict in two Kenyan communities, - Co-led a three-month study investigating individual-scale adaptations to climate change in rural communities across Kenya and Tanzania, - Participated in field courses focused on environmental challenges in East Africa and field research techniques.\nLyman Entomological Museum, McGill University, Montreal, Canada\nSeptember – December 2022 Student Researcher\nMcGill University & Peter-McGill Community Council, Montreal, Canada\nSeptember – December 2022 Student Researcher and GIS Analyst - Conducted a spatial analysis to determine the ideal location for a new park in the Peter-McGill District of Montreal based on client priorities informed by demographic, geographic, and temperature data."
+  },
+  {
+    "objectID": "resume.html#languages",
+    "href": "resume.html#languages",
+    "title": "Resume",
+    "section": "",
+    "text": "English (Fluent)\nFrench (Fluent)\nSwahili (Intermediate)"
+  },
+  {
+    "objectID": "publications.html#featured-portraits",
+    "href": "publications.html#featured-portraits",
+    "title": "Photography",
+    "section": "",
+    "text": "“Datif the Dancer”, Zanzibar, 2024\n\n\n\n\n\n“Chef After the Show”, Kisumu, 2023\n\n\n\n\n\n“Betty”, Kisumu, 2023"
+  },
+  {
+    "objectID": "publications.html#collection-egypt-2023",
+    "href": "publications.html#collection-egypt-2023",
+    "title": "Photography",
+    "section": "Collection: Egypt, 2023",
+    "text": "Collection: Egypt, 2023\n\n“Lucy on the Moon” , Western Desert, 2023\n\n\n\n“Through the Nile”, Luxor, 2023"
+  },
+  {
+    "objectID": "publications.html#collection-arusha-2024",
+    "href": "publications.html#collection-arusha-2024",
+    "title": "Photography",
+    "section": "Collection: Arusha, 2024",
+    "text": "Collection: Arusha, 2024\n\n\n\n“To the Market Through the Rain”, Arusha, 2024\n\n\n\n\n\n“For Sale”, Arusha, 2024\n\n\n\n\n\n“Share this With Me”, Arusha, 2024"
+  },
+  {
+    "objectID": "publications.html#egypt-2023",
+    "href": "publications.html#egypt-2023",
+    "title": "Photography",
+    "section": "Egypt, 2023",
+    "text": "Egypt, 2023\n\n“Lucy on the Moon” , Western Desert, 2023\n\n\n\n“Through the Nile”, Luxor, 2023"
+  },
+  {
+    "objectID": "publications.html#arusha-2024",
+    "href": "publications.html#arusha-2024",
+    "title": "Photography",
+    "section": "Arusha, 2024",
+    "text": "Arusha, 2024\n\n\n\n“To the Market Through the Rain”, Arusha, 2024\n\n\n\n\n\n“For Sale”, Arusha, 2024\n\n\n\n\n\n“Share this With Me”, Arusha, 2024"
   }
 ]

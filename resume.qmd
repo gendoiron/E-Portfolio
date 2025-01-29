@@ -1,39 +1,118 @@
 ---
-title: "Resume"
+title: ""
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-# Education 2
+# Resume
 
--   List your education here.
+## Education
 
-# Publications
+**University of British Columbia**\
+Masters in Geomatics for Environmental Management
+
+**McGill University**\
+Bachelor of Arts, Environment\
+Domain: Ecological Determinants of Health in Society, Minors: Field
+Studies & Indigenous Studies
+
+## Work Experience
+
+**Canadian Museum of Nature,** Ottawa, Canada\
+September – December 2024 *Research and Collections Assistant –
+Invertebrate Zoology* - Completes data entry and digitization of
+sections of the museum’s collection in order to make Canadian ecological
+data accessible for biodiversity research, - Assisted the molecular lab
+with specimen DNA barcoding including DNA extractions, gene isolation,
+and PCR tests.
+
+**Environment and Climate Change Canada,** Remote\
+August 2022 – September 2024 *Youth Council Member* - Represented
+Canadian youth on national and international stages; (e.g. UN
+Biodiversity Conference COP 15) - Advised on Canada’s Net Zero by 2050
+strategy, the 2030 Emissions Reduction Plan, the National Adaptation
+Strategy, and the 2030 Biodiversity Strategy, National Strategy on
+Environmental Justice, among others.
+
+**Coastal Action Foundation,** Lunenburg, Canada April – August 2022
+*Junior Field Technician – Education Team* - Designed and led
+educational programming on a variety of environmental topics, - Assisted
+in various field work activities including population surveys and
+habitat restoration.
+
+**Canadian Students for Sensible Drug Policy McGill,** Montreal, Canada\
+September 2021 – April 2022 *Logistics Coordinator* - Successfully
+co-launched a city wide harm reduction program and led logistics on
+production, scheduling, and delivery of harm reduction kits leading to
+the successful production and delivery of hundreds of harm reduction
+kits in the first month of operation.
+
+**Pembina Institute,** Remote\
+May – August 2021 Research and Engagement Intern – Clean Energy
+Program - Led a research project that culminated in a published report
+outlining five key barriers facing women in Canada’s conventional and
+emerging energy sectors, (See publications section)
+
+**Ecotrust Canada,** Remote\
+May – September 2020 *Research Intern – Energy Policy* - Authored a
+published research report offering recommendations for improved policies
+and programs aimed at energy poverty alleviation in rural, remote, and
+Indigenous communities in British Columbia, Canada, (See publications
+section)
+
+## Student Research
+
+**McGill University Africa Field Study Semester,** Kenya and Tanzania\
+January – March 2023 *Student Researcher* - Co-designed and conducted a
+research project mapping human-wildlife conflict in two Kenyan
+communities, - Co-led a three-month study investigating individual-scale
+adaptations to climate change in rural communities across Kenya and
+Tanzania, - Participated in field courses focused on environmental
+challenges in East Africa and field research techniques.
+
+**Lyman Entomological Museum, McGill University,** Montreal, Canada\
+September – December 2022 *Student Researcher*
+
+**McGill University & Peter-McGill Community Council**, Montreal,
+Canada\
+September – December 2022 *Student Researcher and GIS Analyst* -
+Conducted a spatial analysis to determine the ideal location for a new
+park in the Peter-McGill District of Montreal based on client priorities
+informed by demographic, geographic, and temperature data.
+
+## Publications
 
 *Peer-reviewed publications:*
 
--   List any peer-reviewed publications here.
+Under Review: C. Dominici-Tiranti, M.D. Jackson, G. Doiron, & J.P.
+Gillung. New record of Schendyla nemorensis (Chilopoda: Geophilomorpha)
+for Quebec.
 
 *Reports:*
 
--   List any non-peer reviewed materials you'd like to share here.
+Doiron, Genevieve, Emma Severson-Baker, and Laura Hughes. Women in
+Alberta’s Energy Transition: A review of barriers to participation and
+leadership. The Pembina Institute, 2021.
+https://www.pembina.org/pub/women-albertas-energy-transition
 
-# Conferences & Talks
+Doiron, Genevieve, and Heerema, Dylan. Rethinking Energy Bill
+Protections in British Columbia. Rep. Ecotrust Canada, Aug. 2020.
+https://ecotrust.ca/latest/research/rethinking-energy-bill-protections-in-british
+columbia-2020/
 
-*Invited Talks*
+## Awards
 
--   If you've been invited to speak in a professional setting, list that here.
+Redbank’s Family Loran Scholar (2019)
 
-*Conference Presentations*
+Lieutenant Governor’s Medal for Education (2018)
 
--   If the presentation was at a conference, list them here.
+Nova Scotia Youth Volunteer of the Year Award (2018)
 
-# Awards & Honors
+## Languages
 
--   List any scholarships, bursaries, etc.
+English (Fluent)
 
-# Teaching Assistantships
+French (Fluent)
 
--   List any TA positions you may have held.
-
-# Institutional Service
-
--   Volunteering etc.
+Swahili (Intermediate)

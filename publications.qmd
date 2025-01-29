@@ -1,7 +1,27 @@
 ---
-title: "Publications"
+title: "Photography"
 ---
 
-*Peer-reviewed publications:*
+## Featured Portraits
 
-Despite listing them on your resume, it may also be pertinent to create a seperate tab for publications and reports. As your career progresses, this list may become quite long, so be sure to organize things. You may want to point to 'most recent' publications, or categorize things by project/topic. 
+!["*Datif the Dancer*", Zanzibar, 2024](images/photography/datif_portrait.jpg){fig-align="left" width="589"}
+
+![*"Chef After the Show"*, Kisumu, 2023](images/photography/cook_kisumu.JPG){fig-align="right" width="593"}
+
+!["*Betty*", Kisumu, 2023](images/photography/betty_kisumu.jpeg){fig-align="left" width="590"}
+
+## *Egypt, 2023*
+
+![](images/photography/lucy_dunes_egypt.jpg)
+
+*"Lucy on the Moon"* , Western Desert, 2023
+
+!["*Through the Nile*", Luxor, 2023](images/photography/nile_mosque_egypt.jpg){fig-align="left" width="576"}
+
+## *Arusha, 2024*
+
+!["*To the Market Through the Rain*", Arusha, 2024](images/photography/goat_rain_arusha.jpg){fig-align="left" width="507"}
+
+!["*For Sale"*, Arusha, 2024](images/photography/goat_sale_arusha.jpg){fig-align="right" width="519"}
+
+!["*Share this With Me*", Arusha, 2024](images/photography/umbrella_arusha.jpg){fig-align="left" width="616"}

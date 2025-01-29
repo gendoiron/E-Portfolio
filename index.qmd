@@ -1,6 +1,6 @@
 ---
 title: "Geneviève Doiron"
-image: "C:/Users/ggdoiron.stu/Downloads/waterfall.JPG"
+image: "/images/mount_meru.jpg"
 about:
   template: trestles
   image-width: 20em
@@ -10,9 +10,10 @@ about:
       href: mailto:gendoironn@gmail.com
 ---
 
- 
-Creative, adaptable, and organized. I am a passionate geomatician, interested in equitable climate adaptation, urban planning, and conservation. I have experience in the environment and equity sectors with competencies in research, mapping, field work, and outreach. 
+### About Me
+
+Creative, adaptable, and organized. I am a passionate geomatician, interested in equitable climate change adaptation, urban planning, and conservation. I have experience in the environment and equity sectors with competencies in research, mapping, field work, and outreach.
 
 I am currently pursuing a Masters in Geomatics for Environmental Management at the University of British Columbia.
 
-This website is living repository showcasing my works, both personal and professional, that I am proud of. 
+This website is living repository showcasing the works, both personal and professional, that I am proud of.
