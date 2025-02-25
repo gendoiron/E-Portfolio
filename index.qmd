@@ -1,6 +1,6 @@
 ---
 title: "Geneviève Doiron"
-image: "/images/mount_meru.jpg"
+image: "images/mount_meru.jpg"
 about:
   template: trestles
   image-width: 20em
