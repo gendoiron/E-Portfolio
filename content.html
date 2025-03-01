@@ -131,10 +131,9 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#individual-tree-segmentation" id="toc-individual-tree-segmentation" class="nav-link" data-scroll-target="#individual-tree-segmentation">Individual Tree Segmentation</a>
   <ul class="collapse">
+  <li><a href="#skills-tools-used" id="toc-skills-tools-used" class="nav-link" data-scroll-target="#skills-tools-used">Skills &amp; Tools Used:</a></li>
   <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a></li>
   <li><a href="#code-snippets" id="toc-code-snippets" class="nav-link" data-scroll-target="#code-snippets">Code Snippets</a></li>
-  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
-  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a></li>
   </ul></li>
   <li><a href="#hydrology-analysis" id="toc-hydrology-analysis" class="nav-link" data-scroll-target="#hydrology-analysis">Hydrology Analysis</a></li>
   <li><a href="#least-cost-path-analysis" id="toc-least-cost-path-analysis" class="nav-link" data-scroll-target="#least-cost-path-analysis">Least Cost Path Analysis</a></li>
@@ -181,15 +180,26 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="individual-tree-segmentation" class="level1">
 <h1>Individual Tree Segmentation</h1>
-<p>Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.</p>
+<p><br>
+This project demonstrates individual tree segmentation (ITS) and subsequent visualizatoin using LiDAR data. I highlight both canopy height model-based and point cloud-based methods for tree detection and segmentation. Specifically, the code snippets show the application of two algorthims: <strong><code>li2012</code></strong> and <strong><code>dalponte2016</code></strong>.</p>
+<section id="skills-tools-used" class="level3">
+<h3 class="anchored" data-anchor-id="skills-tools-used">Skills &amp; Tools Used:</h3>
+<ul>
+<li><p><strong>R Programming:</strong> Utilized R for data manipulation, analysis, and visualization.</p></li>
+<li><p><strong>LiDAR Processing:</strong> Used the <strong><code>lidR</code></strong> package to load, filter, and normalize LiDAR data, removing outliers and correcting for ground elevation.</p></li>
+<li><p><strong>Tree Segmentation:</strong> Applied the <strong><code>li2012</code></strong> algorithm on the point cloud data for tree segmentation and used the <strong><code>dalponte2016</code></strong> algorithm on CHM data to detect tree tops and segment individual trees.</p></li>
+<li><p><strong>Visualization:</strong> Created 3D visualizations of segmented trees using the <strong><code>rgl</code></strong> package and compared results from both methods.</p></li>
+<li><p><strong>Raster Analysis:</strong> Generated Canopy Height Models (CHM) at 0.5m resolution using <strong><code>terra</code></strong> to improve segmentation accuracy.</p></li>
+</ul>
+</section>
 <section id="visualization" class="level2">
 <h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
 </section>
 <section id="code-snippets" class="level2">
 <h2 class="anchored" data-anchor-id="code-snippets">Code Snippets</h2>
-<p>Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.</p>
+<p>For both approaches I extracted a plot and subsequently pre-processed the data to remove noise and normalize the point cloud.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset" data-group="language">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Segmentation Method: Li 2012</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Segmentation Method: Dalponte 2016</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Point Cloud Approach: Li 2012</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Canopy Height Model Approach: Dalponte 2016</a></li></ul>
 <div class="tab-content" data-group="language">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <pre class="(.r)"><code># Read in plots    
@@ -214,16 +224,11 @@ ttops_1 &lt;-  locate_trees(CHM_1, lmf(ws=5, hmin=2))
 
 # Segment using Dalponte 2016
 plot1_seg_dal &lt;- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))</code></pre>
-<p>(Assuming <em>nir</em> and <em>red</em> are numpy arrays)</p>
+<p>(Optionally could smooth the CHM prior to tree detection)</p>
 </div>
 </div>
 </div>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-</section>
-<section id="visualizations" class="level2">
-<h2 class="anchored" data-anchor-id="visualizations">Visualizations</h2>
+<p>Automatic individual tree segmentation is an evolving area of research with significant potential in forest management and ecological studies. While it can provide valuable insights into tree attributes such as height, crown diameter, and canopy structure, its accuracy is still limited, particularly in dense and complex forest environments. Despite these challenges, this technique offers promising applications in biodiversity monitoring, carbon stock estimation, forest health assessments, and precision forestry, where understanding individual tree characteristics is crucial for sustainable management and conservation efforts.</p>
 </section>
 </section>
 <section id="hydrology-analysis" class="level1">
@@ -232,6 +237,18 @@ plot1_seg_dal &lt;- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))</co
 </section>
 <section id="least-cost-path-analysis" class="level1">
 <h1>Least Cost Path Analysis</h1>
+<p><strong>Grizzly Bear Movement Modeling</strong><br>
+In this project, I conducted a Least Cost Path (LCP) analysis to model Grizzly Bear movement across the Yellowhead region, using various environmental and human factors to assess movement costs. The goal was to identify the most efficient route between two points in the landscape.<br>
+<strong>Skills &amp; Tools Used:</strong></p>
+<ul>
+<li><p><strong>QGIS &amp; ArcGIS Pro</strong>: Utilized both QGIS for raster manipulation and ArcGIS Pro for the final LCP analysis, showcasing proficiency in both platforms.</p></li>
+<li><p><strong>Raster Analysis</strong>: Used tools like “<strong>Slope</strong>,” “<strong>Reclassify</strong>,” and “<strong>Raster</strong> <strong>Calculator</strong>” in QGIS to derive cost surfaces based on slope, land cover, and road proximity.</p></li>
+<li><p><strong>Reclassification &amp; Weighting</strong>: Reclassified land cover data to assign resistance values and weighted layers to combine them into a unified cost surface.</p></li>
+<li><p><strong>Proximity Analysis</strong>: Created distance-to-roads rasters and applied cost models to factor in human infrastructure’s impact on bear movement.</p></li>
+<li><p><strong>Least Cost Path Analysis</strong>: Applied the “<strong>Distance</strong> <strong>Accumulation</strong>” and “<strong>Optimal</strong> <strong>Path</strong> <strong>as</strong> <strong>Line</strong>” tools in ArcGIS Pro to trace the most efficient path, integrating all cost factors.</p></li>
+</ul>
+<p><strong>Results:</strong><br>
+The least cost path model revealed that Grizzly Bears would most likely avoid steep slopes and areas with high human infrastructure, favoring routes through forested and wetland areas. The weighted cost surface emphasized the avoidance of roads and areas with high land cover resistance, resulting in paths that were longer but more likely to offer safer movement corridors. This model can be used to inform conservation strategies and guide habitat protection efforts.</p>
 
 
 </section>

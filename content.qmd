@@ -34,16 +34,29 @@ Alternative Developments Alternative Developments Alternative Developments Alter
 
 # Individual Tree Segmentation
 
-Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
+\
+This project demonstrates individual tree segmentation (ITS) and subsequent visualizatoin using LiDAR data. I highlight both canopy height model-based and point cloud-based methods for tree detection and segmentation. Specifically, the code snippets show the application of two algorthims: **`li2012`** and **`dalponte2016`**.
+
+### Skills & Tools Used:
+
+-   **R Programming:** Utilized R for data manipulation, analysis, and visualization.
+
+-   **LiDAR Processing:** Used the **`lidR`** package to load, filter, and normalize LiDAR data, removing outliers and correcting for ground elevation.
+
+-   **Tree Segmentation:** Applied the **`li2012`** algorithm on the point cloud data for tree segmentation and used the **`dalponte2016`** algorithm on CHM data to detect tree tops and segment individual trees.
+
+-   **Visualization:** Created 3D visualizations of segmented trees using the **`rgl`** package and compared results from both methods.
+
+-   **Raster Analysis:** Generated Canopy Height Models (CHM) at 0.5m resolution using **`terra`** to improve segmentation accuracy.
 
 ## Visualization
 
 ## Code Snippets
 
-Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
+For both approaches I extracted a plot and subsequently pre-processed the data to remove noise and normalize the point cloud.
 
 ::: {.panel-tabset group="language"}
-## Segmentation Method: Li 2012
+## Point Cloud Approach: Li 2012
 
 ``` (.r)
 # Read in plots    
@@ -60,7 +73,7 @@ for(i in plots){
 }
 ```
 
-## Segmentation Method: Dalponte 2016
+## Canopy Height Model Approach: Dalponte 2016
 
 ``` (.python)
 # Create a canopy height model
@@ -73,15 +86,30 @@ ttops_1 <-  locate_trees(CHM_1, lmf(ws=5, hmin=2))
 plot1_seg_dal <- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))
 ```
 
-(Assuming *nir* and *red* are numpy arrays)
+(Optionally could smooth the CHM prior to tree detection)
 :::
 
-## Code
-
-## Visualizations
+Automatic individual tree segmentation is an evolving area of research with significant potential in forest management and ecological studies. While it can provide valuable insights into tree attributes such as height, crown diameter, and canopy structure, its accuracy is still limited, particularly in dense and complex forest environments. Despite these challenges, this technique offers promising applications in biodiversity monitoring, carbon stock estimation, forest health assessments, and precision forestry, where understanding individual tree characteristics is crucial for sustainable management and conservation efforts.
 
 # Hydrology Analysis
 
 ![](images/clipboard-3256993127.png)
 
 # Least Cost Path Analysis
+
+**Grizzly Bear Movement Modeling**\
+In this project, I conducted a Least Cost Path (LCP) analysis to model Grizzly Bear movement across the Yellowhead region, using various environmental and human factors to assess movement costs. The goal was to identify the most efficient route between two points in the landscape.\
+**Skills & Tools Used:**
+
+-   **QGIS & ArcGIS Pro**: Utilized both QGIS for raster manipulation and ArcGIS Pro for the final LCP analysis, showcasing proficiency in both platforms.
+
+-   **Raster Analysis**: Used tools like "**Slope**," "**Reclassify**," and "**Raster** **Calculator**" in QGIS to derive cost surfaces based on slope, land cover, and road proximity.
+
+-   **Reclassification & Weighting**: Reclassified land cover data to assign resistance values and weighted layers to combine them into a unified cost surface.
+
+-   **Proximity Analysis**: Created distance-to-roads rasters and applied cost models to factor in human infrastructure's impact on bear movement.
+
+-   **Least Cost Path Analysis**: Applied the "**Distance** **Accumulation**" and "**Optimal** **Path** **as** **Line**" tools in ArcGIS Pro to trace the most efficient path, integrating all cost factors.
+
+**Results:**\
+The least cost path model revealed that Grizzly Bears would most likely avoid steep slopes and areas with high human infrastructure, favoring routes through forested and wetland areas. The weighted cost surface emphasized the avoidance of roads and areas with high land cover resistance, resulting in paths that were longer but more likely to offer safer movement corridors. This model can be used to inform conservation strategies and guide habitat protection efforts.

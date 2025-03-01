@@ -4,12 +4,6 @@ format: html
 editor: visual
 ---
 
-# Landscape Ecology Project Proposal
-
-```{=html}
-<iframe width="900" height="1000" src="https://www.scribd.com/document/834096222/DoironG-GEM500Proposal-291124?secret_password=HFvolqyASVa0W28jFnj6" title="Webpage example"></iframe>
-```
-
 # Equitable Transition - Pembina Institute
 
 ## Summary
@@ -21,7 +15,7 @@ During my time as a research intern for the Pembina Institute, I conducted a lit
 This experience significantly strengthened my literature review skills and my ability to communicate complex ideas effectively in writing. The process helped me refine my ability to synthesize a broad range of perspectives into a cohesive analysis. I gained insight into the importance of clear communication in addressing complex, divisive topics like gender equity and an energy transition in an oil-based economy. I continue to work to improve my communication skills, understanding its role in fostering understanding and dialogue.
 
 ```{=html}
-<iframe width="400" height="700" src="https://www.pembina.org/reports/2021-10-14-womeninalbertasenergytransition-pembina.pdf" title="Webpage example"></iframe>
+<iframe width="600" height="800" src="https://www.pembina.org/reports/2021-10-14-womeninalbertasenergytransition-pembina.pdf" title="Webpage example"></iframe>
 ```
 
 # Energy Poverty - Ecotrust Canada
@@ -35,5 +29,5 @@ During my time as a research intern at Ecotrust Canada, I wrote a report examini
 This project significantly improved my research and analytical skills, specifically with regard evaluating and comparing policy programs. It also deepened my understanding of the social impacts of energy poverty and the importance of designing policies that support vulnerable populations. The work reinforced the need for effective communication in policy research, particularly when advocating for change in areas as urgent and impactful as energy affordability and economic recovery.
 
 ```{=html}
-<iframe width="400" height="700" src="https://ecotrust.ca/wp-content/uploads/2020/08/Rethinking-Energy-Bill-Protections-in-British-Columbia.August2020_updated_WEB.pdf"></iframe>
+<iframe width="600" height="800" src="https://ecotrust.ca/wp-content/uploads/2020/08/Rethinking-Energy-Bill-Protections-in-British-Columbia.August2020_updated_WEB.pdf"></iframe>
 ```
