@@ -32,21 +32,21 @@
     "href": "content.html",
     "title": "Content & Deliverables",
     "section": "",
-    "text": "This is a sample page where you can archive project deliverables. Every header you use will correspond to a tab in the legend - shown on the right-hand side of your screen (“On this page”).\nIf you’ve produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.\n\n\nSample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page here.\n\n\n\n\n\n\n\n\n\nSample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nRPython\n\n\ncalc_ndvi &lt;- function(nir, red){ ndvi &lt;- (nir-red)/(nir+red) return(ndvi) }\n\n\ndef calc_ndvi(nir, red): \n  ndvi = (nir.astype(float)-red.astype(float))/(nir.astype(float)+red.astype(float))\n  return(ndvi)\n\n\n\n\n\n\nYou can also provide a frame linking to external websites. For example, here is a link to a Google Earth Engine application I developed. The full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
+    "text": "cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay\n\n\n\n\n\nProposed Developments\nProposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments\n\nAlternative Developments\nAlternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments"
   },
   {
     "objectID": "content.html#leaflet",
     "href": "content.html#leaflet",
     "title": "Content & Deliverables",
     "section": "",
-    "text": "Sample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page here."
+    "text": "Canopy height model"
   },
   {
     "objectID": "content.html#code-snippets",
     "href": "content.html#code-snippets",
     "title": "Content & Deliverables",
-    "section": "",
-    "text": "Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nRPython\n\n\ncalc_ndvi &lt;- function(nir, red){ ndvi &lt;- (nir-red)/(nir+red) return(ndvi) }\n\n\ndef calc_ndvi(nir, red): \n  ndvi = (nir.astype(float)-red.astype(float))/(nir.astype(float)+red.astype(float))\n  return(ndvi)"
+    "section": "Code Snippets",
+    "text": "Code Snippets\nSample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nSegmentation Method: Li 2012Segmentation Method: Dalponte 2016\n\n\n# Read in plots    \nplots &lt;- list.files(path = \"Plots\", pattern = \"\\\\.las$\", full.names = TRUE)\n\n# For Loop to loop through the plots and segment\nfor(i in plots){\n  output_dir &lt;- \"li_trees\"\n  las &lt;- readLAS(i)\n  li_trees &lt;- segment_trees(las, li2012(dt1 = 1.5, dt2 = 2, Zu = 15, hmin = 2, speed_up = 10))\n  plot(li_trees, color = \"treeID\", pal = (pastel.colors(200)))\n  output_file &lt;- file.path(output_dir, paste0(\"segmented_\", basename(i)))\n  writeLAS(li_trees, output_file)\n}\n\n\n# Create a canopy height model\nCHM_1 &lt;- rasterize_canopy(MKRF_Plot_1, res = 0.5, pitfree(c(0,10,20,30), subcircle = 0.2, max_edge = (c(0,1))))\n\n# Locate Tree Tops (local maximums)\nttops_1 &lt;-  locate_trees(CHM_1, lmf(ws=5, hmin=2))\n\n# Segment using Dalponte 2016\nplot1_seg_dal &lt;- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))\n(Assuming nir and red are numpy arrays)"
   },
   {
     "objectID": "content.html#external-links",
@@ -138,5 +138,117 @@
     "title": "Photography",
     "section": "Arusha, 2024",
     "text": "Arusha, 2024\n\n\n\n“To the Market Through the Rain”, Arusha, 2024\n\n\n\n\n\n“For Sale”, Arusha, 2024\n\n\n\n\n\n“Share this With Me”, Arusha, 2024"
+  },
+  {
+    "objectID": "content.html#reports",
+    "href": "content.html#reports",
+    "title": "Content & Deliverables",
+    "section": "",
+    "text": "The Pembina Institute\n\nEcotrust Canada"
+  },
+  {
+    "objectID": "content.html#maps",
+    "href": "content.html#maps",
+    "title": "Content & Deliverables",
+    "section": "",
+    "text": "Proposed Developments\nProposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments\n\nAlternative Developments\nAlternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments"
+  },
+  {
+    "objectID": "content.html#code",
+    "href": "content.html#code",
+    "title": "Content & Deliverables",
+    "section": "Code",
+    "text": "Code"
+  },
+  {
+    "objectID": "content.html#visualizations",
+    "href": "content.html#visualizations",
+    "title": "Content & Deliverables",
+    "section": "Visualizations",
+    "text": "Visualizations"
+  },
+  {
+    "objectID": "cable_bay_maps/eportfolio_cb_parcels.html",
+    "href": "cable_bay_maps/eportfolio_cb_parcels.html",
+    "title": "Your E-Portfolio",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;  ROIparcels  ENG dataset\n\nROIparcels\n\n       PROJCRS[“NAD83 / UTM zone 10N”,BASEGEOGCRS[“NAD83”,DATUM[“North American Datum 1983”,ELLIPSOID[“GRS 1980”,6378137,298.257222101,LENGTHUNIT[“metre”,1]]],PRIMEM[“Greenwich”,0,ANGLEUNIT[“degree”,0.0174532925199433]],ID[“EPSG”,4269]],CONVERSION[“UTM zone 10N”,METHOD[“Transverse Mercator”,ID[“EPSG”,9807]],PARAMETER[“Latitude of natural origin”,0,ANGLEUNIT[“degree”,0.0174532925199433],ID[“EPSG”,8801]],PARAMETER[“Longitude of natural origin”,-123,ANGLEUNIT[“degree”,0.0174532925199433],ID[“EPSG”,8802]],PARAMETER[“Scale factor at natural origin”,0.9996,SCALEUNIT[“unity”,1],ID[“EPSG”,8805]],PARAMETER[“False easting”,500000,LENGTHUNIT[“metre”,1],ID[“EPSG”,8806]],PARAMETER[“False northing”,0,LENGTHUNIT[“metre”,1],ID[“EPSG”,8807]]],CS[Cartesian,2],AXIS[“(E)”,east,ORDER[1],LENGTHUNIT[“metre”,1]],AXIS[“(N)”,north,ORDER[2],LENGTHUNIT[“metre”,1]],USAGE[SCOPE[“Engineering survey, topographic mapping.”],AREA[“North America - between 126°W and 120°W - onshore and offshore. Canada - British Columbia; Northwest Territories; Yukon. United States (USA) - California; Oregon; Washington.”],BBOX[30.54,-126,81.8,-119.99]],ID[“EPSG”,26910]] +proj=utm +zone=10 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs 2287 26910 EPSG:26910 NAD83 / UTM zone 10N utm EPSG:7019 false"
+  },
+  {
+    "objectID": "content.html#visualization",
+    "href": "content.html#visualization",
+    "title": "Content & Deliverables",
+    "section": "Visualization",
+    "text": "Visualization"
+  },
+  {
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Landscape Ecology Project Proposal\n\n\n\nPositionality Statement\n    Positionality Statement GDoiron  by  gennydoiron   \n\n\nEquitable Transition - Pembina Institute\nDuring my time as a research intern for the Pembina Institute, I conducted a literature review and wrote a report examining gender equity in Alberta’s energy sector, particularly in light of the province’s transition to a net-zero economy by 2050. The report reviews existing literature and diverse perspectives on the barriers preventing women from participating and advancing in Alberta’s energy industry, identifying five key obstacles: lack of access to opportunities, lack of good jobs, inability to advance, the income gap, and industry culture. It emphasizes the cultural and social norms that contribute to these barriers and proposes that future research directions as Alberta’s energy sector continues to evolve.\nThis experience significantly strengthened my literature review skills and my ability to communicate complex ideas effectively in writing. The process helped me refine my ability to synthesize a broad range of perspectives into a cohesive analysis. I gained insight into the importance of clear communication in addressing complex, divisive topics like gender equity and an energy transition in an oil-based economy. I continue to work to improve my communication skills, understanding its role in fostering understanding and dialogue.\n\n\n\nEnergy Poverty - Ecotrust Canada\nDuring my time as a research intern at Ecotrust Canada, I wrote a report examining energy poverty in British Columbia, focusing on how the COVID-19 pandemic exacerbated the issue. The report highlighted that as of 2019, approximately 272,200 households in the province were affected by energy poverty, struggling with high energy costs, poor home energy efficiency, and low income. By reviewing programs from Canada and the United States and interviewing key program administrators, the report identified best practices and model programs that could inform future strategies to alleviate energy poverty in BC. It concluded that BC’s current initiatives were insufficient and recommended a comprehensive update to energy support programs, especially as the province works to recover economically from the pandemic.\nThis project significantly improved my research and analytical skills, especially in evaluating and comparing policy programs. It also deepened my understanding of the social impacts of energy poverty and the importance of designing policies that support vulnerable populations. The work reinforced the need for effective communication in policy research, particularly when advocating for change in areas as urgent and impactful as energy affordability and economic recovery."
+  },
+  {
+    "objectID": "writing.html#maps",
+    "href": "writing.html#maps",
+    "title": "Writing",
+    "section": "",
+    "text": "Proposed Developments\nProposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments\n\nAlternative Developments\nAlternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments"
+  },
+  {
+    "objectID": "writing.html#visualization",
+    "href": "writing.html#visualization",
+    "title": "Writing",
+    "section": "Visualization",
+    "text": "Visualization"
+  },
+  {
+    "objectID": "writing.html#code-snippets",
+    "href": "writing.html#code-snippets",
+    "title": "Writing",
+    "section": "Code Snippets",
+    "text": "Code Snippets\nSample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a ‘tabset’ in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let’s showcase a function for calculating NDVI in R and Python.\n\nSegmentation Method: Li 2012Segmentation Method: Dalponte 2016\n\n\n# Read in plots    \nplots &lt;- list.files(path = \"Plots\", pattern = \"\\\\.las$\", full.names = TRUE)\n\n# For Loop to loop through the plots and segment\nfor(i in plots){\n  output_dir &lt;- \"li_trees\"\n  las &lt;- readLAS(i)\n  li_trees &lt;- segment_trees(las, li2012(dt1 = 1.5, dt2 = 2, Zu = 15, hmin = 2, speed_up = 10))\n  plot(li_trees, color = \"treeID\", pal = (pastel.colors(200)))\n  output_file &lt;- file.path(output_dir, paste0(\"segmented_\", basename(i)))\n  writeLAS(li_trees, output_file)\n}\n\n\n# Create a canopy height model\nCHM_1 &lt;- rasterize_canopy(MKRF_Plot_1, res = 0.5, pitfree(c(0,10,20,30), subcircle = 0.2, max_edge = (c(0,1))))\n\n# Locate Tree Tops (local maximums)\nttops_1 &lt;-  locate_trees(CHM_1, lmf(ws=5, hmin=2))\n\n# Segment using Dalponte 2016\nplot1_seg_dal &lt;- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))\n(Assuming nir and red are numpy arrays)"
+  },
+  {
+    "objectID": "writing.html#code",
+    "href": "writing.html#code",
+    "title": "Writing",
+    "section": "Code",
+    "text": "Code"
+  },
+  {
+    "objectID": "writing.html#visualizations",
+    "href": "writing.html#visualizations",
+    "title": "Writing",
+    "section": "Visualizations",
+    "text": "Visualizations"
+  },
+  {
+    "objectID": "writing.html#summary",
+    "href": "writing.html#summary",
+    "title": "Writing",
+    "section": "Summary",
+    "text": "Summary\nDuring my time as a research intern for the Pembina Institute, I conducted a literature review and wrote a report examining gender equity in Alberta’s energy sector, particularly in light of the province’s transition to a net-zero economy by 2050. The report reviews existing literature and diverse perspectives on the barriers preventing women from participating and advancing in Alberta’s energy industry, identifying five key obstacles: lack of access to opportunities, lack of good jobs, inability to advance, the income gap, and industry culture. It emphasizes the cultural and social norms that contribute to these barriers and proposes that future research directions as Alberta’s energy sector continues to evolve."
+  },
+  {
+    "objectID": "writing.html#skills-gained",
+    "href": "writing.html#skills-gained",
+    "title": "Writing",
+    "section": "Skills Gained",
+    "text": "Skills Gained\nThis experience significantly strengthened my literature review skills and my ability to communicate complex ideas effectively in writing. The process helped me refine my ability to synthesize a broad range of perspectives into a cohesive analysis. I gained insight into the importance of clear communication in addressing complex, divisive topics like gender equity and an energy transition in an oil-based economy. I continue to work to improve my communication skills, understanding its role in fostering understanding and dialogue."
+  },
+  {
+    "objectID": "writing.html#summary-1",
+    "href": "writing.html#summary-1",
+    "title": "Writing",
+    "section": "Summary",
+    "text": "Summary\nDuring my time as a research intern at Ecotrust Canada, I wrote a report examining energy poverty in British Columbia, focusing on how the COVID-19 pandemic exacerbated the issue. The report highlighted that as of 2019, approximately 272,200 households in the province were affected by energy poverty, struggling with high energy costs, poor home energy efficiency, and low income. By reviewing programs from Canada and the United States and interviewing key program administrators, the report identified best practices and model programs that could inform future strategies to alleviate energy poverty in BC. It concluded that BC’s current initiatives were insufficient and recommended a comprehensive update to energy support programs. The recommended program was a novel design that I created based on features of programs existing in other jurisdictions."
+  },
+  {
+    "objectID": "writing.html#skills-gained-1",
+    "href": "writing.html#skills-gained-1",
+    "title": "Writing",
+    "section": "Skills Gained",
+    "text": "Skills Gained\nThis project significantly improved my research and analytical skills, specifically with regard evaluating and comparing policy programs. It also deepened my understanding of the social impacts of energy poverty and the importance of designing policies that support vulnerable populations. The work reinforced the need for effective communication in policy research, particularly when advocating for change in areas as urgent and impactful as energy affordability and economic recovery."
   }
 ]

@@ -1,0 +1,39 @@
+---
+title: "Writing"
+format: html
+editor: visual
+---
+
+# Landscape Ecology Project Proposal
+
+```{=html}
+<iframe width="900" height="1000" src="https://www.scribd.com/document/834096222/DoironG-GEM500Proposal-291124?secret_password=HFvolqyASVa0W28jFnj6" title="Webpage example"></iframe>
+```
+
+# Equitable Transition - Pembina Institute
+
+## Summary
+
+During my time as a research intern for the Pembina Institute, I conducted a literature review and wrote a report examining gender equity in Alberta’s energy sector, particularly in light of the province's transition to a net-zero economy by 2050. The report reviews existing literature and diverse perspectives on the barriers preventing women from participating and advancing in Alberta’s energy industry, identifying five key obstacles: lack of access to opportunities, lack of good jobs, inability to advance, the income gap, and industry culture. It emphasizes the cultural and social norms that contribute to these barriers and proposes that future research directions as Alberta's energy sector continues to evolve.
+
+## Skills Gained
+
+This experience significantly strengthened my literature review skills and my ability to communicate complex ideas effectively in writing. The process helped me refine my ability to synthesize a broad range of perspectives into a cohesive analysis. I gained insight into the importance of clear communication in addressing complex, divisive topics like gender equity and an energy transition in an oil-based economy. I continue to work to improve my communication skills, understanding its role in fostering understanding and dialogue.
+
+```{=html}
+<iframe width="400" height="700" src="https://www.pembina.org/reports/2021-10-14-womeninalbertasenergytransition-pembina.pdf" title="Webpage example"></iframe>
+```
+
+# Energy Poverty - Ecotrust Canada
+
+## Summary
+
+During my time as a research intern at Ecotrust Canada, I wrote a report examining energy poverty in British Columbia, focusing on how the COVID-19 pandemic exacerbated the issue. The report highlighted that as of 2019, approximately 272,200 households in the province were affected by energy poverty, struggling with high energy costs, poor home energy efficiency, and low income. By reviewing programs from Canada and the United States and interviewing key program administrators, the report identified best practices and model programs that could inform future strategies to alleviate energy poverty in BC. It concluded that BC’s current initiatives were insufficient and recommended a comprehensive update to energy support programs. The recommended program was a novel design that I created based on features of programs existing in other jurisdictions.
+
+## Skills Gained
+
+This project significantly improved my research and analytical skills, specifically with regard evaluating and comparing policy programs. It also deepened my understanding of the social impacts of energy poverty and the importance of designing policies that support vulnerable populations. The work reinforced the need for effective communication in policy research, particularly when advocating for change in areas as urgent and impactful as energy affordability and economic recovery.
+
+```{=html}
+<iframe width="400" height="700" src="https://ecotrust.ca/wp-content/uploads/2020/08/Rethinking-Energy-Bill-Protections-in-British-Columbia.August2020_updated_WEB.pdf"></iframe>
+```

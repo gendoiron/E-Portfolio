@@ -3,7 +3,7 @@ project:
   output-dir: "C:/Users/ggdoiron.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio"
 
 website:
-  title: "Your E-Portfolio"
+  title: "Geneviève Doiron"
   navbar:
     left:
       - href: index.qmd
@@ -12,8 +12,10 @@ website:
         text: Resume
       - href: publications.qmd
         text: Photography
+      - href: writing.qmd
+        text: Writing
       - href: content.qmd
-        text: Content & Deliverables
+        text: Projects
 
 format:
   html:
@@ -22,4 +24,3 @@ format:
     toc: true
 
 editor: visual
-

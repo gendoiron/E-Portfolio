@@ -7,7 +7,9 @@ about:
   links: 
     - icon: envelope-at
       text: Email
-      href: mailto:gendoironn@gmail.com
+      href: mailto:gendoironn@gmail.com 
+    - text: Positionality Statement
+      href: "cable_bay_maps/Positionality_Statement_GDoiron.pdf"
 ---
 
 ### About Me

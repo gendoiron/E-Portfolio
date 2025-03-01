@@ -4,56 +4,84 @@ format: html
 editor: visual
 ---
 
-# Project 1 - Capstone Deliverables
+# Save Cable Bay
 
-This is a sample page where you can archive project deliverables. Every header you use will correspond to a tab in the legend - shown on the right-hand side of your screen ("On this page").
-
-If you've produced any GIS layers for your 599 project, this may be a good place to share them as interactive maps through leaflet. Alternatively, you can upload high-res figures showing correlations, box-plots, etc. from your report here, and provide a brief overview of key project results. If you have written some useful functions, you may also want to share those here to demonstrate proficiency in particular coding languages or synergies between notable coding packages.
+cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay
 
 ## Leaflet
 
-Sample leaflet - for detailed leaflet instructions, visit the FCOR 599 workshop archive page [here](https://ubc-mgem-fcor599.github.io/FCOR-599-Workshops/Interactive_Maps/leaflet.html).
-
-```{r leaflet, include = FALSE}
-library(dplyr); library(leaflet)
-
-m <- leaflet() %>%
-  addProviderTiles("Esri.WorldImagery") %>%
-  addScaleBar(position = c("bottomleft")) %>%
-  setView(-123.1207, 49.2827, zoom = 11)
+```{r}
 
 ```
 
-```{r map, echo=FALSE}
-m
-```
+---
+gif: "C:/Users/ggdoiron.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/gif/4_pointcloud_norm_Z_750x750_black_2degree_10fps.gif"
+---
+
+## Maps
+
+Proposed Developments
+
+Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments
+
+![](images/clipboard-1755856040.jpeg)
+
+Alternative Developments
+
+Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments
+
+![](images/clipboard-2196079768.jpeg)
+
+# Individual Tree Segmentation
+
+Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
+
+## Visualization
 
 ## Code Snippets
 
 Sample code snippet. Notice that you can provide a toggle to switch between coding languages - this is referred to as a 'tabset' in quarto. It is good practice to try and convert your R code to python, and vice-versa to demonstrate coding proficiency. For example, let's showcase a function for calculating NDVI in R and Python.
 
 ::: {.panel-tabset group="language"}
-## R
+## Segmentation Method: Li 2012
 
 ``` (.r)
-calc_ndvi <- function(nir, red){ ndvi <- (nir-red)/(nir+red) return(ndvi) }
+# Read in plots    
+plots <- list.files(path = "Plots", pattern = "\\.las$", full.names = TRUE)
+
+# For Loop to loop through the plots and segment
+for(i in plots){
+  output_dir <- "li_trees"
+  las <- readLAS(i)
+  li_trees <- segment_trees(las, li2012(dt1 = 1.5, dt2 = 2, Zu = 15, hmin = 2, speed_up = 10))
+  plot(li_trees, color = "treeID", pal = (pastel.colors(200)))
+  output_file <- file.path(output_dir, paste0("segmented_", basename(i)))
+  writeLAS(li_trees, output_file)
+}
 ```
 
-## Python
+## Segmentation Method: Dalponte 2016
 
 ``` (.python)
-def calc_ndvi(nir, red): 
-  ndvi = (nir.astype(float)-red.astype(float))/(nir.astype(float)+red.astype(float))
-  return(ndvi)
+# Create a canopy height model
+CHM_1 <- rasterize_canopy(MKRF_Plot_1, res = 0.5, pitfree(c(0,10,20,30), subcircle = 0.2, max_edge = (c(0,1))))
+
+# Locate Tree Tops (local maximums)
+ttops_1 <-  locate_trees(CHM_1, lmf(ws=5, hmin=2))
+
+# Segment using Dalponte 2016
+plot1_seg_dal <- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))
 ```
+
+(Assuming *nir* and *red* are numpy arrays)
 :::
 
-## External links
+## Code
 
-You can also provide a frame linking to external websites. For example, here is a link to a Google Earth Engine application I developed. The full-screen GEE application is available [here](https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool) in case you're interested.
+## Visualizations
 
-(To use the GEE tool, navigate to any city you'd like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)
+# Hydrology Analysis
 
-```{=html}
-<iframe width="900" height="700" src="https://ee-melserramon.projects.earthengine.app/view/thermal-analysis-tool" title="Webpage example"></iframe>
-```
+![](images/clipboard-3256993127.png)
+
+# Least Cost Path Analysis
