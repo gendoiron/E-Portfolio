@@ -6,9 +6,19 @@ title: "Photography"
 
 !["*Datif the Dancer*", Zanzibar, 2024](images/photography/datif_portrait.jpg){fig-align="left" width="589"}
 
+![](images/clipboard-2591854745.png){width="509"}
+
+*"The photographer, photographed"*, Salento, 2024
+
 ![*"Chef After the Show"*, Kisumu, 2023](images/photography/cook_kisumu.JPG){fig-align="right" width="593"}
 
 !["*Betty*", Kisumu, 2023](images/photography/betty_kisumu.jpeg){fig-align="left" width="590"}
+
+## *Kenya, 2023*
+
+![](images/clipboard-2492366177.png){width="632"}
+
+*"Lake Victoria Locals"*, Kisumu, 2023
 
 ## *Egypt, 2023*
 
@@ -25,3 +35,9 @@ title: "Photography"
 !["*For Sale"*, Arusha, 2024](images/photography/goat_sale_arusha.jpg){fig-align="right" width="519"}
 
 !["*Share this With Me*", Arusha, 2024](images/photography/umbrella_arusha.jpg){fig-align="left" width="616"}
+
+## *Colombia, 2024*
+
+![](images/clipboard-2763756317.png)
+
+*"Salento Steed",* Salento, 2024

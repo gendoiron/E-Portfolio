@@ -18,7 +18,7 @@
     "href": "publications.html",
     "title": "Photography",
     "section": "",
-    "text": "“Datif the Dancer”, Zanzibar, 2024\n\n\n\n\n\n“Chef After the Show”, Kisumu, 2023\n\n\n\n\n\n“Betty”, Kisumu, 2023"
+    "text": "“Datif the Dancer”, Zanzibar, 2024\n\n\n\n“The photographer, photographed”, Salento, 2024\n\n\n\n“Chef After the Show”, Kisumu, 2023\n\n\n\n\n\n“Betty”, Kisumu, 2023"
   },
   {
     "objectID": "content_development.html",
@@ -109,7 +109,7 @@
     "href": "publications.html#featured-portraits",
     "title": "Photography",
     "section": "",
-    "text": "“Datif the Dancer”, Zanzibar, 2024\n\n\n\n\n\n“Chef After the Show”, Kisumu, 2023\n\n\n\n\n\n“Betty”, Kisumu, 2023"
+    "text": "“Datif the Dancer”, Zanzibar, 2024\n\n\n\n“The photographer, photographed”, Salento, 2024\n\n\n\n“Chef After the Show”, Kisumu, 2023\n\n\n\n\n\n“Betty”, Kisumu, 2023"
   },
   {
     "objectID": "publications.html#collection-egypt-2023",
@@ -404,5 +404,19 @@
     "title": "Projects",
     "section": "",
     "text": "As a part of the project I had to create polygons to represent the alternative vision the group had, such as the below example in which I use a for loop in python to create multiple clipped parcels based on buffers of varying distances.\n# Loop to buffer and intersect for each buffer size\nfor size in buff_size:\n    # Error Handling: Lets try this out with a try-except loop\n    try:\n        #this is a code for naming the files based on the size so we don't have spaces in the name\n        if len(size) == 9:\n            size_code = size[:2]\n        else: \n            size_code = size[:3]\n\n        # Set buffer output file path\n        buff_output = os.path.join(output_folder, f\"trail_buffer_{size_code}m.shp\")\n        print(buff_output)\n\n        # Create buffer around the trail\n        trail_buffer = arcpy.Buffer_analysis(in_features= cablebay_trail, \n                      out_feature_class=buff_output, \n                      buffer_distance_or_field= size,\n                      dissolve_option=\"ALL\"\n                      )\n\n        # Set the clipped parcel an output file path\n        erase_output = os.path.join(output_folder, f\"NFPparcel_clipped_{size_code}m.shp\")\n\n        # Clip the NFP  target parcels where they intersect the buffer\n        clipped_parcel = arcpy.Erase_analysis(target_parcels, trail_buffer, erase_output)\n\n        #print a nice message to say that the loop finished and we got results\n        print(f\"Cable Bay Trail Buffer: {size} - NFP development area clipping completed.\")"
+  },
+  {
+    "objectID": "publications.html#kenya-2023",
+    "href": "publications.html#kenya-2023",
+    "title": "Photography",
+    "section": "Kenya, 2023",
+    "text": "Kenya, 2023\n\n“Lake Victoria Locals”, Kisumu, 2023"
+  },
+  {
+    "objectID": "publications.html#colombia-2024",
+    "href": "publications.html#colombia-2024",
+    "title": "Photography",
+    "section": "Colombia, 2024",
+    "text": "Colombia, 2024\n\n“Salento Steed”, Salento, 2024"
   }
 ]
