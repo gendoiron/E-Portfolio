@@ -82,7 +82,7 @@ for size in buff_size:
 
 -   **R:** LiDAR and imagery processing
 
--    **ArcGIS Pro**: Raster manipulation
+-   **ArcGIS Pro**: Raster manipulation
 
 -   **Python:** Random Forest Classification
 
@@ -152,6 +152,12 @@ This project demonstrates individual tree segmentation (ITS) and subsequent visu
 
 -   **Visualization:** Used the **`rgl`** to create 3D visualizations.
 
+## Visualization of the Plot:
+
+Below is a rotating gif visualization of the plot used for segmentation, located in the Cable Bay Trail Area on Vancouver Island, Canada.
+
+![](gif/cb_plot_clip5_Z_750x750_white_2degree_10fps.gif)
+
 ## Code Snippets
 
 For both approaches I extracted a plot and subsequently pre-processed the data to remove noise and normalize the point cloud.
@@ -161,7 +167,7 @@ For both approaches I extracted a plot and subsequently pre-processed the data t
 
 ``` (.r)
 # Read in plots    
-plots <- list.files(path = "Plots", pattern = "\\.las$", full.names = TRUE)
+plots <- list.files(path = "Cable_Bay_Plots", pattern = "\\.las$", full.names = TRUE)
 
 # For Loop to loop through the plots and segment
 for(i in plots){
@@ -178,13 +184,13 @@ for(i in plots){
 
 ``` (.python)
 # Create a canopy height model
-CHM_1 <- rasterize_canopy(MKRF_Plot_1, res = 0.5, pitfree(c(0,10,20,30), subcircle = 0.2, max_edge = (c(0,1))))
+CHM_1 <- rasterize_canopy(Cable_Bay_Plot_1, res = 0.5, pitfree(c(0,10,20,30), subcircle = 0.2, max_edge = (c(0,1))))
 
 # Locate Tree Tops (local maximums)
 ttops_1 <-  locate_trees(CHM_1, lmf(ws=5, hmin=2))
 
 # Segment using Dalponte 2016
-plot1_seg_dal <- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))
+plot1_seg_dal <- segment_trees(Cable_Bay_Plot_1, dalponte2016(CHM_1, ttops_1))
 ```
 
 (Optionally could smooth the CHM prior to tree detection)

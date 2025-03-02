@@ -10,8 +10,6 @@ about:
       href: mailto:gendoironn@gmail.com 
     - text: Positionality Statement
       href: cable_bay_maps/Positionality_Statement_GDoiron.pdf
-    - text: Resume
-      href: cable_bay_maps/Resume_GD_2025.pdf
 ---
 
 ### About Me

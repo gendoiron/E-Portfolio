@@ -46,7 +46,7 @@
     "href": "content.html#code-snippets",
     "title": "Projects",
     "section": "Code Snippets",
-    "text": "Code Snippets\nFor both approaches I extracted a plot and subsequently pre-processed the data to remove noise and normalize the point cloud.\n\nPoint Cloud Approach: Li 2012Canopy Height Model Approach: Dalponte 2016\n\n\n# Read in plots    \nplots &lt;- list.files(path = \"Plots\", pattern = \"\\\\.las$\", full.names = TRUE)\n\n# For Loop to loop through the plots and segment\nfor(i in plots){\n  output_dir &lt;- \"li_trees\"\n  las &lt;- readLAS(i)\n  li_trees &lt;- segment_trees(las, li2012(dt1 = 1.5, dt2 = 2, Zu = 15, hmin = 2, speed_up = 10))\n  plot(li_trees, color = \"treeID\", pal = (pastel.colors(200)))\n  output_file &lt;- file.path(output_dir, paste0(\"segmented_\", basename(i)))\n  writeLAS(li_trees, output_file)\n}\n\n\n# Create a canopy height model\nCHM_1 &lt;- rasterize_canopy(MKRF_Plot_1, res = 0.5, pitfree(c(0,10,20,30), subcircle = 0.2, max_edge = (c(0,1))))\n\n# Locate Tree Tops (local maximums)\nttops_1 &lt;-  locate_trees(CHM_1, lmf(ws=5, hmin=2))\n\n# Segment using Dalponte 2016\nplot1_seg_dal &lt;- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))\n(Optionally could smooth the CHM prior to tree detection)"
+    "text": "Code Snippets\nFor both approaches I extracted a plot and subsequently pre-processed the data to remove noise and normalize the point cloud.\n\nPoint Cloud Approach: Li 2012Canopy Height Model Approach: Dalponte 2016\n\n\n# Read in plots    \nplots &lt;- list.files(path = \"Cable_Bay_Plots\", pattern = \"\\\\.las$\", full.names = TRUE)\n\n# For Loop to loop through the plots and segment\nfor(i in plots){\n  output_dir &lt;- \"li_trees\"\n  las &lt;- readLAS(i)\n  li_trees &lt;- segment_trees(las, li2012(dt1 = 1.5, dt2 = 2, Zu = 15, hmin = 2, speed_up = 10))\n  plot(li_trees, color = \"treeID\", pal = (pastel.colors(200)))\n  output_file &lt;- file.path(output_dir, paste0(\"segmented_\", basename(i)))\n  writeLAS(li_trees, output_file)\n}\n\n\n# Create a canopy height model\nCHM_1 &lt;- rasterize_canopy(Cable_Bay_Plot_1, res = 0.5, pitfree(c(0,10,20,30), subcircle = 0.2, max_edge = (c(0,1))))\n\n# Locate Tree Tops (local maximums)\nttops_1 &lt;-  locate_trees(CHM_1, lmf(ws=5, hmin=2))\n\n# Segment using Dalponte 2016\nplot1_seg_dal &lt;- segment_trees(Cable_Bay_Plot_1, dalponte2016(CHM_1, ttops_1))\n(Optionally could smooth the CHM prior to tree detection)"
   },
   {
     "objectID": "content.html#external-links",
@@ -418,5 +418,12 @@
     "title": "Photography",
     "section": "Colombia, 2024",
     "text": "Colombia, 2024\n\n“Salento Steed”, Salento, 2024"
+  },
+  {
+    "objectID": "content.html#visualization-of-the-plot",
+    "href": "content.html#visualization-of-the-plot",
+    "title": "Projects",
+    "section": "Visualization of the Plot:",
+    "text": "Visualization of the Plot:\nBelow is a rotating gif visualization of the plot used for segmentation, located in the Cable Bay Trail Area on Vancouver Island, Canada."
   }
 ]
