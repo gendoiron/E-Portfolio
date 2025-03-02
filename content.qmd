@@ -106,7 +106,7 @@ The unsupervised classification of the area of interest using leaf-off LiDAR (Fe
 
 ![](images/clipboard-2408993919.png)
 
-### Leaf-on LiDAR Unsupervised Classification
+#### Leaf-on LiDAR Unsupervised Classification
 
 The unsupervised classification of the area of interest using leaf-on LiDAR (May 2019) and autumnal spectral imagery (October,2019) shows a probable Garry oak patch labeled as Garry oak. Preliminary visual assessment suggests relatively accurate classification of the coniferous-broad leaf level, however the species level accuracy has not yet been assessed.
 
