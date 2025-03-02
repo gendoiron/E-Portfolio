@@ -36,7 +36,7 @@ There is proposed development on both sides of the trail, with the parcels on th
 
 #### Alternative Development
 
-![](cable_bay_maps/Alternative_layout_022025 conv 1.png)
+![](cable_bay_maps/Alternative_layout_022025%20conv%201.png)
 
 ### Python for Spatial Analysis
 
@@ -78,7 +78,13 @@ for size in buff_size:
 
 **Data: LiDAR point clouds, Sentinel 2 Imagery**
 
-**Key Methods: - LiDAR and imagery processing in R - Raster manipulation in ArcGIS - Random Forest Classification in Python**
+**Key Methods:**
+
+-   **R:** LiDAR and imagery processing
+
+-    **ArcGIS Pro**: Raster manipulation
+
+-   **Python:** Random Forest Classification
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -138,15 +144,13 @@ This project demonstrates individual tree segmentation (ITS) and subsequent visu
 
 ## Skills & Tools Used:
 
--   **R Programming:** Utilized R for data manipulation, analysis, and visualization.
+-   **R Programming:** Data pre-processing, analysis, and visualization. Used the **`lidR`**, **`terra`**, **`sf`**, **`tidyverse`** **`rgl`** packages
 
--   **LiDAR Processing:** Used the **`lidR`** package to load, filter, and normalize LiDAR data, removing outliers and correcting for ground elevation.
+-   **LiDAR Processing:** LiDAR point cloud pre-processing using the **`lidR`** package including filtering and normalizing.
 
--   **Tree Segmentation:** Applied the **`li2012`** algorithm on the point cloud data for tree segmentation and used the **`dalponte2016`** algorithm on CHM data to detect tree tops and segment individual trees.
+-   **Tree Segmentation:** Applied both point cloud and canopy height model based approaches to segmentation.
 
--   **Visualization:** Created 3D visualizations of segmented trees using the **`rgl`** package and compared results from both methods.
-
--   **Raster Analysis:** Generated Canopy Height Models (CHM) at 0.5m resolution using **`terra`** to improve segmentation accuracy.
+-   **Visualization:** Used the **`rgl`** to create 3D visualizations.
 
 ## Code Snippets
 
@@ -196,19 +200,19 @@ I conducted a Least Cost Path (LCP) analysis to model Grizzly Bear movement acro
 
 ## **Skills & Tools Used:**
 
--   **QGIS:** Raster analysis including deriving input features, completing feature proximity analysis, and reclassifying based on weights of relative cost.
+-   **QGIS** Raster analysis including deriving input features, completing feature proximity analysis, and reclassifying based on weights of relative cost.
 
     -   Tools: "**Slope**," "**Reclassify,**" and "**Raster Calculator**" **"Proximity Analysis"**
 
--   **ArcGIS:** Final least cost analysis using the derived cost raster layers as inputs, and final visualization of results.
+-   **ArcGIS Pro** Final least cost analysis using the derived cost raster layers as inputs, and final visualization of results.
 
     -   Tools: "**Distance Accumulation**" and "**Optimal Path as Line**"
 
--   **Results Visualization:**
+-   **Results Visualization**
 
     -   Creating the map to communicate the analysis, with its numerous input components, allowed me to strengthen my visual communication skills by effectively presenting complex data in a clear and accessible way, ensuring that key findings were easily understood.
 
-![](images/GEM510_Lab5_GD conv 1.png)
+![](images/GEM510_Lab5_GD%20conv%201.png)
 
 ## Applications:
 
