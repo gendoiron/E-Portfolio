@@ -6,7 +6,7 @@ editor: visual
 
 # Save Cable Bay
 
-The Cable Bay Trail Area is the location of both a volunteer project I support and my capstone research for my master's degree. Located on Southeastern Vancouver Island, Cable Bay is surrounded by 400 acres of undeveloped land within the northern range of Garry oak ecosystems (GOEs). The area faces proposed developments currently being opposed by the Save Cable Bay community group.
+The Cable Bay Trail Area is the location of both a volunteer project I support and my capstone research for my master's degree. The area, located in southeastern Vancouver Island, faces proposed developments currently being opposed by the Save Cable Bay community group.
 
 ### Study Site Map
 
