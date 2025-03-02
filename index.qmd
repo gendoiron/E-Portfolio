@@ -1,6 +1,6 @@
 ---
 title: "Geneviève Doiron"
-image: "images/mount_meru.jpg"
+image: images/mount_meru.jpg
 about:
   template: trestles
   image-width: 20em
@@ -9,9 +9,9 @@ about:
       text: Email
       href: mailto:gendoironn@gmail.com 
     - text: Positionality Statement
-      href: "cable_bay_maps/Positionality_Statement_GDoiron.pdf" 
+      href: cable_bay_maps/Positionality_Statement_GDoiron.pdf 
     - text: Resume
-      href: "cable_bay_maps/Resume_GD_2025.pdf"
+      href: cable_bay_maps/Resume_GD_2025.pdf
 ---
 
 ### About Me
