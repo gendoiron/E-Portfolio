@@ -6,38 +6,43 @@ editor: visual
 
 # Save Cable Bay
 
-cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay cablebay
+The Cable Bay Trail Area is the location of both a volunteer project I support and my capstone research for my master's degree. Located on Southeastern Vancouver Island, Cable Bay is surrounded by 400 acres of undeveloped land within the northern range of Garry oak ecosystems (GOEs). The area faces proposed developments currently being opposed by the Save Cable Bay community group.
 
-## Leaflet
+### Study Site Map
 
-```{r}
+![](images/clipboard-1464195342.png)
 
-```
+## Client Work:
 
----
-gif: "C:/Users/ggdoiron.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/gif/4_pointcloud_norm_Z_750x750_black_2degree_10fps.gif"
----
+As a volunteer for the Save Cable Bay community group, I offer geospatial analysis and visualization support, helping them create materials that support their conservation efforts. This client-based work allows me to collaborate closely with the group, where we exchange ideas and refine materials based on their input, ensuring that the final products effectively communicate their message. The work involves handling a variety of data types, including participatory mapping, which enriches the project by incorporating local knowledge from community members.
 
-## Maps
+Additionally, I am responsible for data sourcing and management, creating and maintaining a comprehensive inventory to track project data for a large group of volunteers. This experience is invaluable for my career, as it strengthens my skills in client communication, data management, and geospatial analysis, while also providing me with practical experience in a real-world, community-based conservation setting.
 
-Proposed Developments
+The maps I created for the community conservation group visually represent both the proposed developments in the area and their alternative vision for the land. These maps serve as critical tools for the group to communicate the potential impacts of development versus their conservation goals. By highlighting the areas of concern, I have helped the group demonstrate how proposed projects could affect the environment, and how their alternative vision aligns better with the community’s conservation values. These maps not only support the group’s advocacy efforts but also provide a clear, visual way to engage with the public, decision-makers, and stakeholders in discussions about land use and conservation priorities. This experience has been an excellent opportunity to enhance my skills in spatial analysis and map design, which are essential for effective communication in environmental management and conservation planning.
 
-Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments Proposed Developments
+## Development Maps
+
+### Proposed Developments
+
+There is proposed development on both sides of the trail, with the parcels on the East to face potential residential expansion by Cable Bay Estates (CBE) and to the West to be rezoned for heavy industrial use by Nanaimo Forest Products (NFP). Bordering these parcels to the West is industrially zoned land that hosts the Harmac Pulp Mill which is also owned by NFP. The expansion of their property is proposed to include a subdivided industrial park (Seward Developments Inc., 2022). Nanaimo Forest Products has agreed to include a 100m buffer from the trail, however the proposed buffer is only an average of 100m with 50% of the boundary at only 50m from the trail (Seward Developments Inc., 2022). The eastern parcels are facing proposed residential development by CBE; the private owner has applied for subdivision into 34 residential sites (Williamson & Associates Professional Surveyors, 2023).
 
 ![](images/clipboard-1755856040.jpeg)
 
-Alternative Developments
-
-Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments Alternative Developments
+### Alternative Developments
 
 ![](images/clipboard-2196079768.jpeg)
 
+## Capstone Research:
+
+On top of the volunteer work, I am conducting my capstone research in the Cable Bay area. In my ongoing capstone research, I am exploring how combining Light Detection and Ranging (LiDAR) data with optical imagery can improve species-level forest classification — witha particular emphasis on identifying rare species—a current limitation of existing approaches. Imagery only often struggle to accurately classify less common species due limited spatial resolution and similarities in spectral signatures. By integrating LiDAR’s detailed structural data with the spectral information from optical imagery, the study seeks to determine if this combination enhances the accuracy of identifying Garry Oaks compared to using optical imagery alone. Specifically, this research aims to support the efforts of the Save Cable Bay community group in protecting Garry Oak ecosystems, which are relatively rare in the research area. Once the most accurate model is determined, a subsequent analysis will be conducted on the impacts of the proposed development scenarios on the Garry oak populations.
+
+While the primary focus is on supporting Garry Oak conservation, the findings have broader applications in resource management and conservation, offering improved methods for species identification and ecosystem monitoring.
+
 # Individual Tree Segmentation
 
-\
 This project demonstrates individual tree segmentation (ITS) and subsequent visualizatoin using LiDAR data. I highlight both canopy height model-based and point cloud-based methods for tree detection and segmentation. Specifically, the code snippets show the application of two algorthims: **`li2012`** and **`dalponte2016`**.
 
-### Skills & Tools Used:
+## Skills & Tools Used:
 
 -   **R Programming:** Utilized R for data manipulation, analysis, and visualization.
 
@@ -48,8 +53,6 @@ This project demonstrates individual tree segmentation (ITS) and subsequent visu
 -   **Visualization:** Created 3D visualizations of segmented trees using the **`rgl`** package and compared results from both methods.
 
 -   **Raster Analysis:** Generated Canopy Height Models (CHM) at 0.5m resolution using **`terra`** to improve segmentation accuracy.
-
-## Visualization
 
 ## Code Snippets
 
@@ -89,27 +92,30 @@ plot1_seg_dal <- segment_trees(MKRF_Plot_1, dalponte2016(CHM_1, ttops_1))
 (Optionally could smooth the CHM prior to tree detection)
 :::
 
+## Applications
+
 Automatic individual tree segmentation is an evolving area of research with significant potential in forest management and ecological studies. While it can provide valuable insights into tree attributes such as height, crown diameter, and canopy structure, its accuracy is still limited, particularly in dense and complex forest environments. Despite these challenges, this technique offers promising applications in biodiversity monitoring, carbon stock estimation, forest health assessments, and precision forestry, where understanding individual tree characteristics is crucial for sustainable management and conservation efforts.
-
-# Hydrology Analysis
-
-![](images/clipboard-3256993127.png)
 
 # Least Cost Path Analysis
 
-**Grizzly Bear Movement Modeling**\
-In this project, I conducted a Least Cost Path (LCP) analysis to model Grizzly Bear movement across the Yellowhead region, using various environmental and human factors to assess movement costs. The goal was to identify the most efficient route between two points in the landscape.\
-**Skills & Tools Used:**
+I conducted a Least Cost Path (LCP) analysis to model Grizzly Bear movement across the Yellowhead region, considering various environmental and human factors that influence movement. The goal was to identify the most efficient route between two points by assessing the costs associated with different landscape features. LCP analysis factored in resistance elements such as terrain, land cover, and infrastructure.
 
--   **QGIS & ArcGIS Pro**: Utilized both QGIS for raster manipulation and ArcGIS Pro for the final LCP analysis, showcasing proficiency in both platforms.
+## **Skills & Tools Used:**
 
--   **Raster Analysis**: Used tools like "**Slope**," "**Reclassify**," and "**Raster** **Calculator**" in QGIS to derive cost surfaces based on slope, land cover, and road proximity.
+-   **QGIS:** Raster analysis including deriving input features, completing feature proximity analysis, and reclassifying based on weights of relative cost.
 
--   **Reclassification & Weighting**: Reclassified land cover data to assign resistance values and weighted layers to combine them into a unified cost surface.
+    -   Tools: "**Slope**," "**Reclassify,**" and "**Raster Calculator**" **"Proximity Analysis"**
 
--   **Proximity Analysis**: Created distance-to-roads rasters and applied cost models to factor in human infrastructure's impact on bear movement.
+-   **ArcGIS:** Final least cost analysis using the derived cost raster layers as inputs, and final visualization of results.
 
--   **Least Cost Path Analysis**: Applied the "**Distance** **Accumulation**" and "**Optimal** **Path** **as** **Line**" tools in ArcGIS Pro to trace the most efficient path, integrating all cost factors.
+    -   Tools: "**Distance Accumulation**" and "**Optimal Path as Line**"
 
-**Results:**\
-The least cost path model revealed that Grizzly Bears would most likely avoid steep slopes and areas with high human infrastructure, favoring routes through forested and wetland areas. The weighted cost surface emphasized the avoidance of roads and areas with high land cover resistance, resulting in paths that were longer but more likely to offer safer movement corridors. This model can be used to inform conservation strategies and guide habitat protection efforts.
+-   **Results Visualization:**
+
+    -   Creating the map to communicate the analysis, with its numerous input components, allowed me to strengthen my visual communication skills by effectively presenting complex data in a clear and accessible way, ensuring that key findings were easily understood.
+
+![](images/GEM510_Lab5_GD conv 1.png)
+
+## Applications:
+
+The Least Cost Path (LCP) analysis is particularly valuable in conservation work and regional planning, where understanding landscape connectivity is crucial for maintaining habitat corridors and supporting species movement. It can be applied in projects aimed at mitigating habitat fragmentation, guiding conservation strategies, or planning for sustainable land use. Through this project, I also honed my ability to effectively communicate complex results through visual mapping, a skill essential for presenting findings to stakeholders and informing decision-making processes in local and regional environmental management.

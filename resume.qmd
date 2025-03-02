@@ -3,14 +3,19 @@ title: ""
 editor: 
   markdown: 
     wrap: 72
+  links: 
+    - text: Download a copy
+      href: "C:/Users/ggdoiron.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/cable_bay_maps/Resume_GD_2025.pdf"
 ---
 
 # Resume
 
+[Download a copy](cable_bay_maps/Resume_GD_2025.pdf)
+
 ## Education
 
 **University of British Columbia**\
-Masters in Geomatics for Environmental Management
+Masters in Geomatics for Environmental Management (In Progress)
 
 **McGill University**\
 Bachelor of Arts, Environment\

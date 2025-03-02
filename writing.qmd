@@ -4,18 +4,72 @@ format: html
 editor: visual
 ---
 
+This page features a diverse selection of written works, both academic and professional. Each sample underscores the skills I have cultivated through these experiences, including research, analysis, communication, and stakeholder engagement. These works not only demonstrate my ability to tailor content to various contexts and audiences but also reflect my ongoing development as a proficient and versatile writer.
+
+# Resource Conflict Analysis
+
+## Summary
+
+This analysis, completed with my colleague Max Lorsignol, explores the conflict between Cross River gorilla conservation and the livelihoods of Indigenous communities in the Lebialem-Mone Forest Landscape, Cameroon. The proposed Tofala Hill Wildlife Sanctuary has created tensions due to the imposition of conservation policies without sufficient community involvement, despite the forest’s crucial role in local livelihoods. The lack of meaningful dialogue has led to distrust, highlighting the need for a more inclusive, bottom-up conservation approach.
+
+## Key Learnings
+
+Through this case study, I advanced my policy and stakeholder analysis skills. I can apply what I’ve learned about effective communication and stakeholder engagement to my career in the environment sector by ensuring that local communities are actively involved in decision-making processes. By fostering transparency, trust, and collaborative partnerships, I can help develop sustainable solutions that balance conservation goals with the needs of local populations, ultimately leading to more successful and inclusive environmental projects.
+
+## Report
+
+```{=html}
+ <iframe class="scribd_iframe_embed" title="FCOR510 ConflictAssign ML GD" src="https://www.scribd.com/embeds/834305744/content?start_page=1&view_mode=scroll&access_key=key-iZzX7SOiwoglgViZCmdi&scribd_rebrand=true" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7080062794348508" scrolling="no" width="100%" height="600" frameborder="0" ></iframe> <p style="margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-size: 14px; line-height: normal; display: block;"> <a title="View FCOR510 ConflictAssign ML GD on Scribd" href="https://www.scribd.com/document/834305744/FCOR510-ConflictAssign-ML-GD#from_embed" style="text-decoration: underline;"> FCOR510 ConflictAssign ML GD </a> by <a title="View gennydoiron's profile on Scribd" href="https://www.scribd.com/user/842740156/gennydoiron#from_embed" style="text-decoration: underline;" > gennydoiron </a> </p> 
+```
+
+# Indigenous Fisheries: Policy Analysis
+
+## Summary
+
+This policy analysis addresses the challenges within the current fishery licensing system in British Columbia, which allows commercial licenses and quotas to be bought, sold, and leased as commodities. This system has led to significant economic inequality, pricing out small-scale fish harvesters, including Indigenous fishers, and empowering large corporations to dominate the industry. My policy recommendation, a policy-package named *Preserving Independence of Pacific Region Indigenous Fishers (PIPRIF),* aims to limit corporate control over fishing licenses and quotas, ensuring that licenses are reserved for active, small-scale fishers. PIPRIF draws inspiration from successful policies in Atlantic Canada and seeks to protect the economic viability of Indigenous fisheries by restricting corporate influence, banning license leasing and controlling agreements, and maintaining access for traditional fishing practices.
+
+*Note:* *The analysis portion of the project was completed in collaboration with my colleagues Isaac Kuugaayeng and Vivekan Jeyagaran, while the policy recommendation was my own individual work.*
+
+## Key Learnings
+
+In preparing this policy analysis, I gained valuable experience in navigating diverse knowledge systems, particularly in balancing traditional ecological knowledge with Western resource management frameworks. This process involved in-depth research into federal and provincial legislation, alongside an understanding of Indigenous governance and conservation practices. I learned how to consider both legal structures and community-based knowledge in the context of environmental policy, which is essential when working in local or regional-scale environmental management. This experience enhanced my ability to approach resource management challenges holistically, incorporating multiple perspectives and developing more inclusive, sustainable policy recommendations that support both environmental and community needs. These skills are directly applicable to my professional growth, as they enable me to engage effectively with stakeholders, understand complex legislative contexts, and create solutions that are both legally sound and culturally respectful.
+
+## Report
+
+```{=html}
+<iframe class="scribd_iframe_embed" title="Working with Diverse Knowledge Systems: Fishery Policy Analysis" src="https://www.scribd.com/embeds/834312976/content?start_page=1&view_mode=scroll&access_key=key-KWk2qK3BU3geqsGfEXJj&scribd_rebrand=true" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7729220222793488" scrolling="no" width="100%" height="600" frameborder="0" ></iframe> <p style="margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-size: 14px; line-height: normal; display: block;"> <a title="View Working with Diverse Knowledge Systems: Fishery Policy Analysis on Scribd" href="https://www.scribd.com/document/834312976/Working-with-Diverse-Knowledge-Systems-Fishery-Policy-Analysis#from_embed" style="text-decoration: underline;"> Working with Diverse Knowledge Systems: Fishery Policy Analysis </a> by <a title="View gennydoiron's profile on Scribd" href="https://www.scribd.com/user/842740156/gennydoiron#from_embed" style="text-decoration: underline;" > gennydoiron </a> </p>  
+```
+
+# Research Project Proposal: Landscape Ecology
+
+## Summary
+
+This research proposal outlines a landscape ecology project to identify climate change resilient sites for the facilitated migration of Garry oak trees on Vancouver Island. By integrating genomic data, climate forecasts, and protected area maps, the study aims to account for genetic differences between Garry oak populations, which have been overlooked in previous studies. The goal is to determine population-specific sites for acorn planting, improving the success and sustainability of Garry oak migration projects in the face of climate change.
+
+## Key Learnings
+
+Through this project, I strengthened my ability to write clear, concise, and compelling project proposals. I focused on effectively communicating complex scientific concepts in a way that is accessible to a broader audience, including potential funders. This experience has improved my scientific writing skills, which are essential in the field of environmental conservation and resource management which requires engagement with a wide variety of stakeholders for project proposals and reports alike.
+
+## Report
+
+```{=html}
+<iframe class="scribd_iframe_embed" title="DoironG_GEM500Proposal_291124" src="https://www.scribd.com/embeds/834314612/content?start_page=1&view_mode=scroll&access_key=key-vnnQIQxAxGTDj0GZcXRa&scribd_rebrand=true" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7729220222793488" scrolling="no" width="100%" height="600" frameborder="0" ></iframe> <p style="margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-size: 14px; line-height: normal; display: block;"> <a title="View DoironG_GEM500Proposal_291124 on Scribd" href="https://www.scribd.com/document/834314612/DoironG-GEM500Proposal-291124#from_embed" style="text-decoration: underline;"> DoironG_GEM500Proposal_291124 </a> by <a title="View gennydoiron's profile on Scribd" href="https://www.scribd.com/user/842740156/gennydoiron#from_embed" style="text-decoration: underline;" > gennydoiron </a> </p> 
+```
+
 # Equitable Transition - Pembina Institute
 
 ## Summary
 
 During my time as a research intern for the Pembina Institute, I conducted a literature review and wrote a report examining gender equity in Alberta’s energy sector, particularly in light of the province's transition to a net-zero economy by 2050. The report reviews existing literature and diverse perspectives on the barriers preventing women from participating and advancing in Alberta’s energy industry, identifying five key obstacles: lack of access to opportunities, lack of good jobs, inability to advance, the income gap, and industry culture. It emphasizes the cultural and social norms that contribute to these barriers and proposes that future research directions as Alberta's energy sector continues to evolve.
 
-## Skills Gained
+## Key Learnings
 
 This experience significantly strengthened my literature review skills and my ability to communicate complex ideas effectively in writing. The process helped me refine my ability to synthesize a broad range of perspectives into a cohesive analysis. I gained insight into the importance of clear communication in addressing complex, divisive topics like gender equity and an energy transition in an oil-based economy. I continue to work to improve my communication skills, understanding its role in fostering understanding and dialogue.
 
+## Report
+
 ```{=html}
-<iframe width="600" height="800" src="https://www.pembina.org/reports/2021-10-14-womeninalbertasenergytransition-pembina.pdf" title="Webpage example"></iframe>
+<iframe  width="800" height="550" src="https://www.pembina.org/reports/2021-10-14-womeninalbertasenergytransition-pembina.pdf" title="Webpage example"></iframe>
 ```
 
 # Energy Poverty - Ecotrust Canada
@@ -24,10 +78,12 @@ This experience significantly strengthened my literature review skills and my ab
 
 During my time as a research intern at Ecotrust Canada, I wrote a report examining energy poverty in British Columbia, focusing on how the COVID-19 pandemic exacerbated the issue. The report highlighted that as of 2019, approximately 272,200 households in the province were affected by energy poverty, struggling with high energy costs, poor home energy efficiency, and low income. By reviewing programs from Canada and the United States and interviewing key program administrators, the report identified best practices and model programs that could inform future strategies to alleviate energy poverty in BC. It concluded that BC’s current initiatives were insufficient and recommended a comprehensive update to energy support programs. The recommended program was a novel design that I created based on features of programs existing in other jurisdictions.
 
-## Skills Gained
+## Key Learnings
 
 This project significantly improved my research and analytical skills, specifically with regard evaluating and comparing policy programs. It also deepened my understanding of the social impacts of energy poverty and the importance of designing policies that support vulnerable populations. The work reinforced the need for effective communication in policy research, particularly when advocating for change in areas as urgent and impactful as energy affordability and economic recovery.
 
+## Report
+
 ```{=html}
-<iframe width="600" height="800" src="https://ecotrust.ca/wp-content/uploads/2020/08/Rethinking-Energy-Bill-Protections-in-British-Columbia.August2020_updated_WEB.pdf"></iframe>
+<iframe width="800" height="550" src="https://ecotrust.ca/wp-content/uploads/2020/08/Rethinking-Energy-Bill-Protections-in-British-Columbia.August2020_updated_WEB.pdf"></iframe>
 ```
