@@ -1,5 +1,5 @@
 ---
-title: "Content & Deliverables"
+title: "Projects"
 format: html
 editor: visual
 ---
@@ -12,31 +12,125 @@ The Cable Bay Trail Area is the location of both a volunteer project I support a
 
 ![](images/clipboard-1464195342.png)
 
-## Client Work:
+## Client Work
 
 As a volunteer for the Save Cable Bay community group, I offer geospatial analysis and visualization support, helping them create materials that support their conservation efforts. This client-based work allows me to collaborate closely with the group, where we exchange ideas and refine materials based on their input, ensuring that the final products effectively communicate their message. The work involves handling a variety of data types, including participatory mapping, which enriches the project by incorporating local knowledge from community members.
 
 Additionally, I am responsible for data sourcing and management, creating and maintaining a comprehensive inventory to track project data for a large group of volunteers. This experience is invaluable for my career, as it strengthens my skills in client communication, data management, and geospatial analysis, while also providing me with practical experience in a real-world, community-based conservation setting.
 
-The maps I created for the community conservation group visually represent both the proposed developments in the area and their alternative vision for the land. These maps serve as critical tools for the group to communicate the potential impacts of development versus their conservation goals. By highlighting the areas of concern, I have helped the group demonstrate how proposed projects could affect the environment, and how their alternative vision aligns better with the community’s conservation values. These maps not only support the group’s advocacy efforts but also provide a clear, visual way to engage with the public, decision-makers, and stakeholders in discussions about land use and conservation priorities. This experience has been an excellent opportunity to enhance my skills in spatial analysis and map design, which are essential for effective communication in environmental management and conservation planning.
+The maps I created for the community conservation group visually represent both the proposed developments in the area and their alternative vision for the land. These maps serve as critical tools for the group to communicate the potential impacts of development versus their conservation goals. By highlighting the areas of concern, I have helped the group demonstrate how proposed projects could affect the environment, and how their alternative vision aligns better with the community’s conservation values. These maps not only support the group’s advocacy efforts but also provide a clear, visual way to engage with the public, decision-makers, and stakeholders in discussions about land use and conservation priorities.
 
-## Development Maps
+This experience has been an excellent opportunity to enhance my skills in spatial analysis and map design, including the use of python and ArcPy. Moreover, it gave me invaluable experience working with a client and balancing the requests of mulitple stakeholders at once.
 
-### Proposed Developments
+### Proposed Development Maps
 
 There is proposed development on both sides of the trail, with the parcels on the East to face potential residential expansion by Cable Bay Estates (CBE) and to the West to be rezoned for heavy industrial use by Nanaimo Forest Products (NFP). Bordering these parcels to the West is industrially zoned land that hosts the Harmac Pulp Mill which is also owned by NFP. The expansion of their property is proposed to include a subdivided industrial park (Seward Developments Inc., 2022). Nanaimo Forest Products has agreed to include a 100m buffer from the trail, however the proposed buffer is only an average of 100m with 50% of the boundary at only 50m from the trail (Seward Developments Inc., 2022). The eastern parcels are facing proposed residential development by CBE; the private owner has applied for subdivision into 34 residential sites (Williamson & Associates Professional Surveyors, 2023).
 
+#### Context of Proposed Development
+
 ![](images/clipboard-1755856040.jpeg)
 
-### Alternative Developments
+#### Zoomed Proposed Development
 
 ![](images/clipboard-2196079768.jpeg)
 
-## Capstone Research:
+#### Alternative Development
 
-On top of the volunteer work, I am conducting my capstone research in the Cable Bay area. In my ongoing capstone research, I am exploring how combining Light Detection and Ranging (LiDAR) data with optical imagery can improve species-level forest classification — witha particular emphasis on identifying rare species—a current limitation of existing approaches. Imagery only often struggle to accurately classify less common species due limited spatial resolution and similarities in spectral signatures. By integrating LiDAR’s detailed structural data with the spectral information from optical imagery, the study seeks to determine if this combination enhances the accuracy of identifying Garry Oaks compared to using optical imagery alone. Specifically, this research aims to support the efforts of the Save Cable Bay community group in protecting Garry Oak ecosystems, which are relatively rare in the research area. Once the most accurate model is determined, a subsequent analysis will be conducted on the impacts of the proposed development scenarios on the Garry oak populations.
+![](cable_bay_maps/Alternative_layout_022025 conv 1.png)
+
+### Python for Spatial Analysis
+
+As a part of the project I had to create polygons to represent the alternative vision the group had, such as the below example in which I use a for loop in python to create multiple clipped parcels based on buffers of varying distances.
+
+``` python
+# Loop to buffer and intersect for each buffer size
+for size in buff_size:
+    # Error Handling: Lets try this out with a try-except loop
+    try:
+        #this is a code for naming the files based on the size so we don't have spaces in the name
+        if len(size) == 9:
+            size_code = size[:2]
+        else: 
+            size_code = size[:3]
+
+        # Set buffer output file path
+        buff_output = os.path.join(output_folder, f"trail_buffer_{size_code}m.shp")
+        print(buff_output)
+
+        # Create buffer around the trail
+        trail_buffer = arcpy.Buffer_analysis(in_features= cablebay_trail, 
+                      out_feature_class=buff_output, 
+                      buffer_distance_or_field= size,
+                      dissolve_option="ALL"
+                      )
+
+        # Set the clipped parcel an output file path
+        erase_output = os.path.join(output_folder, f"NFPparcel_clipped_{size_code}m.shp")
+
+        # Clip the NFP  target parcels where they intersect the buffer
+        clipped_parcel = arcpy.Erase_analysis(target_parcels, trail_buffer, erase_output)
+
+        #print a nice message to say that the loop finished and we got results
+        print(f"Cable Bay Trail Buffer: {size} - NFP development area clipping completed.")
+```
+
+## Capstone Research
+
+**Data: LiDAR point clouds, Sentinel 2 Imagery**
+
+**Key Methods: - LiDAR and imagery processing in R - Raster manipulation in ArcGIS - Random Forest Classification in Python**
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+On top of the volunteer work, I am conducting my capstone research in the Cable Bay area. In my ongoing capstone research, I am exploring how combining Light Detection and Ranging (LiDAR) data with optical imagery can improve species-level forest classification — with a particular emphasis on identifying rare species—a current limitation of existing approaches. Imagery only often struggle to accurately classify less common species due limited spatial resolution and similarities in spectral signatures. By integrating LiDAR’s detailed structural data with the spectral information from optical imagery, the study seeks to determine if this combination enhances the accuracy of identifying Garry Oak, a sub-dominant species in the area, compared to using optical imagery alone. The study also compares the use of remotely sensed data from various seasons, including LiDAR from the leaf-on and leaf-off seasons.
+
+The final classification will be done using a supervised Random Forest classifier (a machine learning model using Python). The training data informed by site visits, citizen-science data, ortho-rectified imagery, and environmental impact assessments.
+
+Once the most accurate model is determined, a subsequent analysis will be conducted on the impacts of the proposed development scenarios on the Garry oak populations.
 
 While the primary focus is on supporting Garry Oak conservation, the findings have broader applications in resource management and conservation, offering improved methods for species identification and ecosystem monitoring.
+
+### Preliminary Results
+
+As an initial proof of concept I conducted an unsupervised species level classification of the area, followed by a supervised coniferous-broadleaf level classification.
+
+#### Leaf-on LiDAR Unsupervised Classification:
+
+The unsupervised classification of the area of interest using leaf-off LiDAR (February 2016) and autumnal spectral imagery (October, 2019) shows the probable Garry oak patch labeled as unknown. Diaganol striping in the classification suggests potential artifacts in the data that lead to errors in classification.
+
+![](images/clipboard-2408993919.png)
+
+### Leaf-on LiDAR Unsupervised Classification
+
+The unsupervised classification of the area of interest using leaf-on LiDAR (May 2019) and autumnal spectral imagery (October,2019) shows a probable Garry oak patch labeled as Garry oak. Preliminary visual assessment suggests relatively accurate classification of the coniferous-broad leaf level, however the species level accuracy has not yet been assessed.
+
+![](images/clipboard-2965924790.png)
+
+### Initial Supervised Classification: LiDAR and Imagery
+
+The map displays the raster result of a supervised classification of Cable Bay, distinguishing the coniferous and broadleaf forest types. This classification was achieved by integrating multi-season LiDAR data with multi-season optical imagery. The classification was performed with pixel level LiDAR metrics and multiple spectral indices as the inputs.
+
+The classification using both LiDAR and optical imagery achieved above 90% producer and user accuracy for both tree classes, and an overall accuracy of 78.12%. In comparison, the overall accuracy of the imagery only classification was 78.95%, slightly higher than the classification using imagery and LiDAR. However, for both tree classes the accuracy was higher for the combined classification than it was when using imagery alone. The overall accuracy of the LiDAR only classification was 69.08%, the lowest of all classifications. However, it had the second highest accuracy for the tree classes, both above 85%.
+
+Red represents broadleaf trees, yellow represents the conifers, and blue is the water and green is for other (mostly barren land and grassy meadows).
+
+## Leaflet Map
+
+```{r leaflet, include = FALSE}
+library(terra); library(dplyr); library(leaflet)
+
+classified_all <- rast("C:/Users/ggdoiron.stu/OneDrive - UBC/Documents/GitHub/E-Portfolio/chm_layers/classified_allcomb.tif")
+
+m <- leaflet() %>%
+  addProviderTiles("Esri.WorldImagery") %>%
+  addRasterImage(classified_all) %>% 
+  addScaleBar(position = c("bottomleft"))
+
+```
+
+```{r map, echo=FALSE}
+m
+```
 
 # Individual Tree Segmentation
 
