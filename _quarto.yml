@@ -10,7 +10,7 @@ website:
         text: Home
       - href: resume.qmd
         text: Resume
-      - href: publications.qmd
+      - href: photography.qmd
         text: Photography
       - href: writing.qmd
         text: Writing

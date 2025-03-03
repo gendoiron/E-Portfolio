@@ -10,7 +10,7 @@ title: "Photography"
 
 *"The photographer, photographed"*, Salento, 2024
 
-![*"Chef After the Show"*, Kisumu, 2023](images/photography/cook_kisumu.JPG){fig-align="right" width="593"}
+![*"Chef After the Show"*, Kisumu, 2023](images/photography/cook_kisumu.JPG){fig-align="left" width="593"}
 
 !["*Betty*", Kisumu, 2023](images/photography/betty_kisumu.jpeg){fig-align="left" width="590"}
 
@@ -32,7 +32,7 @@ title: "Photography"
 
 !["*To the Market Through the Rain*", Arusha, 2024](images/photography/goat_rain_arusha.jpg){fig-align="left" width="507"}
 
-!["*For Sale"*, Arusha, 2024](images/photography/goat_sale_arusha.jpg){fig-align="right" width="519"}
+!["*Went to the Market"*, Arusha, 2024](images/photography/goat_sale_arusha.jpg){fig-align="left" width="519"}
 
 !["*Share this With Me*", Arusha, 2024](images/photography/umbrella_arusha.jpg){fig-align="left" width="616"}
 
